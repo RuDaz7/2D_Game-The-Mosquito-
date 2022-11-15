@@ -1,0 +1,19 @@
+Demo Scene:
+Controls:
+'Spacebar' to change characters
+'T' to shoot
+'WASD' to move the character
+
+Characters:
+-Scout can double jump and shoots 3 projectiles, the player model has knock back after every shot
+
+-Hunter shoots one projectile with a red trail
+
+-Cannon fodder shoots a big projectile. Hold down the shoot button to increase the range of the projectile
+
+-Big Guns will start shooting a lot of rounds once the shoot button has been pressed down for 4 seconds
+
+-Soldier shoots a rocket explosive that travels in a downwards curve, the longer you press the shoot button the 
+further the rocket travels
+
+-Captain shoots a small projectile at his opponents

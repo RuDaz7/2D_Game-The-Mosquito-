@@ -1,0 +1,11 @@
+Characters:
+There are 6 different characters and each character has their own bullet associated with them
+There characters have been split and each individual frame has been labeled.
+The big player icons can be used as a HUD showing the characters health and ammunition amount left,
+they can also be used as a character selection icon on the home screen.
+
+Refer to demo scene to see example of shooting mechanics
+
+-Thank you for downloading my asset i hope it lives up to your expectations :) any problems post them here : 
+https://connect.unity.com/u/max-aqimg-1-1-1-1-1-1-1-1-1
+
