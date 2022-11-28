@@ -1,0 +1,588 @@
+fileFormatVersion: 2
+guid: 925b2ffb0b9886a4d8cb3caf9febaa0a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3097976923892235785
+    second: Mosq_Attack1_0
+  - first:
+      213: -3902348287750640678
+    second: Mosq_Attack1_1
+  - first:
+      213: -5463542302156988183
+    second: Mosq_Attack1_2
+  - first:
+      213: -7632684304966061409
+    second: Mosq_Attack1_3
+  - first:
+      213: 7550395838474804980
+    second: Mosq_Attack1_4
+  - first:
+      213: 8851620969677591130
+    second: Mosq_Attack1_5
+  - first:
+      213: -3080825038952912235
+    second: Mosq_Attack1_6
+  - first:
+      213: -6295379284931062089
+    second: Mosq_Attack1_7
+  - first:
+      213: 75545634767005551
+    second: Mosq_Attack1_8
+  - first:
+      213: -7973492336765142152
+    second: Mosq_Attack1_9
+  - first:
+      213: -3366342413193524137
+    second: Mosq_Attack1_10
+  - first:
+      213: 8917878976002822966
+    second: Mosq_Attack1_11
+  - first:
+      213: 626970996415377867
+    second: Mosq_Attack1_12
+  - first:
+      213: 8879731421907944644
+    second: Mosq_Attack1_13
+  - first:
+      213: 5281371756395539940
+    second: Mosq_Attack1_14
+  - first:
+      213: 2020263459548066235
+    second: Mosq_Attack1_15
+  - first:
+      213: 390182904232160693
+    second: Mosq_Attack1_16
+  - first:
+      213: -6538361576238099478
+    second: Mosq_Attack1_17
+  - first:
+      213: -4743696686562855319
+    second: Mosq_Attack1_18
+  - first:
+      213: 7726739764642579937
+    second: Mosq_Attack1_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mosq_Attack1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2562
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e34f639993efa20800000000000000
+      internalID: 3097976923892235785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Attack1_1
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 2562
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adbe4c668e218d9c0800000000000000
+      internalID: -3902348287750640678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Attack1_2
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 2562
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0ec9829399d24b0800000000000000
+      internalID: -5463542302156988183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Attack1_3
+      rect:
+        serializedVersion: 2
+        x: 3183
+        y: 2562
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f927cc77012431690800000000000000
+      internalID: -7632684304966061409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Attack1_4
+      rect:
+        serializedVersion: 2
+        x: 4244
+        y: 2562
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fed0e9e20568c860800000000000000
+      internalID: 7550395838474804980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Attack1_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1708
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a521800cf5647da70800000000000000
+      internalID: 8851620969677591130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Attack1_6
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 1708
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a251233f5be35d0800000000000000
+      internalID: -3080825038952912235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Attack1_7
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 1708
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6d45b05e152a8a0800000000000000
+      internalID: -6295379284931062089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Attack1_8
+      rect:
+        serializedVersion: 2
+        x: 3183
+        y: 1708
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f676e94ca546c0100800000000000000
+      internalID: 75545634767005551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Attack1_9
+      rect:
+        serializedVersion: 2
+        x: 4244
+        y: 1708
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b70df07f6785190800000000000000
+      internalID: -7973492336765142152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Attack1_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 854
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75cc44d29695841d0800000000000000
+      internalID: -3366342413193524137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Attack1_11
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 854
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63392920eaba2cb70800000000000000
+      internalID: 8917878976002822966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Attack1_12
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 854
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1bfc5acc273b800800000000000000
+      internalID: 626970996415377867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Attack1_13
+      rect:
+        serializedVersion: 2
+        x: 3183
+        y: 854
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c482bf6ea42b3b70800000000000000
+      internalID: 8879731421907944644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Attack1_14
+      rect:
+        serializedVersion: 2
+        x: 4244
+        y: 854
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edacba61a33b4940800000000000000
+      internalID: 5281371756395539940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Attack1_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb17013a9ea690c10800000000000000
+      internalID: 2020263459548066235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Attack1_16
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 0
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd203cb8453a6500800000000000000
+      internalID: 390182904232160693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Attack1_17
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 0
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3d343c9c21345a0800000000000000
+      internalID: -6538361576238099478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Attack1_18
+      rect:
+        serializedVersion: 2
+        x: 3183
+        y: 0
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966393b2ff00b2eb0800000000000000
+      internalID: -4743696686562855319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Attack1_19
+      rect:
+        serializedVersion: 2
+        x: 4244
+        y: 0
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5086fb0e4ea3b60800000000000000
+      internalID: 7726739764642579937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

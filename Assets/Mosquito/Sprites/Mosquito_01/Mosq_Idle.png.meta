@@ -1,0 +1,588 @@
+fileFormatVersion: 2
+guid: 8fe34dc1e017d39428b4c67e54be7730
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1939315983118617153
+    second: Mosq_Idle_0
+  - first:
+      213: -2384669144111938836
+    second: Mosq_Idle_1
+  - first:
+      213: -4796551348081046995
+    second: Mosq_Idle_2
+  - first:
+      213: -3501055844965228043
+    second: Mosq_Idle_3
+  - first:
+      213: -1986142196029310909
+    second: Mosq_Idle_4
+  - first:
+      213: -8444419110023403223
+    second: Mosq_Idle_5
+  - first:
+      213: 5494464134297393236
+    second: Mosq_Idle_6
+  - first:
+      213: -7593971730117808238
+    second: Mosq_Idle_7
+  - first:
+      213: 7639353013547975883
+    second: Mosq_Idle_8
+  - first:
+      213: -7344794310182784954
+    second: Mosq_Idle_9
+  - first:
+      213: -3800886561239220127
+    second: Mosq_Idle_10
+  - first:
+      213: 4234795546022282241
+    second: Mosq_Idle_11
+  - first:
+      213: -5068046977639532177
+    second: Mosq_Idle_12
+  - first:
+      213: 7288086939902376286
+    second: Mosq_Idle_13
+  - first:
+      213: 2715468339093509349
+    second: Mosq_Idle_14
+  - first:
+      213: -5518587923142796705
+    second: Mosq_Idle_15
+  - first:
+      213: 5261051752553901055
+    second: Mosq_Idle_16
+  - first:
+      213: 5835185816636460939
+    second: Mosq_Idle_17
+  - first:
+      213: -4238509395336531080
+    second: Mosq_Idle_18
+  - first:
+      213: -6806063729697380506
+    second: Mosq_Idle_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mosq_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2562
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb53af6636a2615e0800000000000000
+      internalID: -1939315983118617153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 2562
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce28f564c04f7eed0800000000000000
+      internalID: -2384669144111938836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 2562
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a45be46f93f6db0800000000000000
+      internalID: -4796551348081046995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 3183
+        y: 2562
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1ea062240c96fc0800000000000000
+      internalID: -3501055844965228043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 4244
+        y: 2562
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348324c123ecf64e0800000000000000
+      internalID: -1986142196029310909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1708
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929e8845f856fca80800000000000000
+      internalID: -8444419110023403223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 1708
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4589bebe402404c40800000000000000
+      internalID: 5494464134297393236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 1708
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f28ff22facc9690800000000000000
+      internalID: -7593971730117808238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 3183
+        y: 1708
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4465e371f640a60800000000000000
+      internalID: 7639353013547975883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 4244
+        y: 1708
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640be314d7c021a90800000000000000
+      internalID: -7344794310182784954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 854
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160c7cd7fc9804bc0800000000000000
+      internalID: -3800886561239220127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 854
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1048019bc1405ca30800000000000000
+      internalID: 4234795546022282241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 854
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69bdc0202eaaa9b0800000000000000
+      internalID: -5068046977639532177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 3183
+        y: 854
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e597b09357c742560800000000000000
+      internalID: 7288086939902376286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 4244
+        y: 854
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e41d7631184fa520800000000000000
+      internalID: 2715468339093509349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a105bc5890a63b0800000000000000
+      internalID: -5518587923142796705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Idle_16
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 0
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffbebe7d1b2030940800000000000000
+      internalID: 5261051752553901055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Idle_17
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 0
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f8307859ebaf050800000000000000
+      internalID: 5835185816636460939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Idle_18
+      rect:
+        serializedVersion: 2
+        x: 3183
+        y: 0
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8737fc9592acd25c0800000000000000
+      internalID: -4238509395336531080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq_Idle_19
+      rect:
+        serializedVersion: 2
+        x: 4244
+        y: 0
+        width: 1061
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667a7b019110c81a0800000000000000
+      internalID: -6806063729697380506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

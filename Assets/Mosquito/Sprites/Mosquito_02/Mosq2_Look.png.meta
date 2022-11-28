@@ -1,0 +1,948 @@
+fileFormatVersion: 2
+guid: 0538c10d57014c848a374da3fa0f235e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7229202217051297020
+    second: Mosq2_Look_0
+  - first:
+      213: -4418379483003123303
+    second: Mosq2_Look_1
+  - first:
+      213: -6540316621285994770
+    second: Mosq2_Look_2
+  - first:
+      213: -3034458676928160624
+    second: Mosq2_Look_3
+  - first:
+      213: -5313305465352417542
+    second: Mosq2_Look_4
+  - first:
+      213: 870366670751932393
+    second: Mosq2_Look_5
+  - first:
+      213: -8879996527069347828
+    second: Mosq2_Look_6
+  - first:
+      213: 7214389060410233740
+    second: Mosq2_Look_7
+  - first:
+      213: 232512387596561726
+    second: Mosq2_Look_8
+  - first:
+      213: -6884565039033479947
+    second: Mosq2_Look_9
+  - first:
+      213: 4702643414835837289
+    second: Mosq2_Look_10
+  - first:
+      213: -2212206172249000664
+    second: Mosq2_Look_11
+  - first:
+      213: -7031998218987005997
+    second: Mosq2_Look_12
+  - first:
+      213: -2787032048827505912
+    second: Mosq2_Look_13
+  - first:
+      213: 5977794831046870980
+    second: Mosq2_Look_14
+  - first:
+      213: -8233464385764287238
+    second: Mosq2_Look_15
+  - first:
+      213: 7591550777454863985
+    second: Mosq2_Look_16
+  - first:
+      213: -4574330728478990810
+    second: Mosq2_Look_17
+  - first:
+      213: -3905450734559584725
+    second: Mosq2_Look_18
+  - first:
+      213: 5990940690664303414
+    second: Mosq2_Look_19
+  - first:
+      213: 1235387282196277950
+    second: Mosq2_Look_20
+  - first:
+      213: 5590370989710756004
+    second: Mosq2_Look_21
+  - first:
+      213: -8303565268452375292
+    second: Mosq2_Look_22
+  - first:
+      213: -4050080314847569510
+    second: Mosq2_Look_23
+  - first:
+      213: -1720937675331633831
+    second: Mosq2_Look_24
+  - first:
+      213: 5450315717030877596
+    second: Mosq2_Look_25
+  - first:
+      213: 8493471943885259405
+    second: Mosq2_Look_26
+  - first:
+      213: -7002125549009556216
+    second: Mosq2_Look_27
+  - first:
+      213: -549289778670680546
+    second: Mosq2_Look_28
+  - first:
+      213: -2160884603296979267
+    second: Mosq2_Look_29
+  - first:
+      213: -2292850259670172700
+    second: Mosq2_Look_30
+  - first:
+      213: 7816509898194167959
+    second: Mosq2_Look_31
+  - first:
+      213: -8421451766664900293
+    second: Mosq2_Look_32
+  - first:
+      213: 735728365026273274
+    second: Mosq2_Look_33
+  - first:
+      213: -461803865592436898
+    second: Mosq2_Look_34
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mosq2_Look_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6504
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf41fcc4d19435460800000000000000
+      internalID: 7229202217051297020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_1
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 6504
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99989b01543cea2c0800000000000000
+      internalID: -4418379483003123303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_2
+      rect:
+        serializedVersion: 2
+        x: 2446
+        y: 6504
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee4aad5fa02c35a0800000000000000
+      internalID: -6540316621285994770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_3
+      rect:
+        serializedVersion: 2
+        x: 3669
+        y: 6504
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c581c19ef63e5d0800000000000000
+      internalID: -3034458676928160624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_4
+      rect:
+        serializedVersion: 2
+        x: 4892
+        y: 6504
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe078294d85346b0800000000000000
+      internalID: -5313305465352417542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5420
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef128a20e9241c00800000000000000
+      internalID: 870366670751932393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_6
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 5420
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c004455f43ae3c480800000000000000
+      internalID: -8879996527069347828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_7
+      rect:
+        serializedVersion: 2
+        x: 2446
+        y: 5420
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83573180a8ae1460800000000000000
+      internalID: 7214389060410233740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_8
+      rect:
+        serializedVersion: 2
+        x: 3669
+        y: 5420
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d229cd8cc0a3300800000000000000
+      internalID: 232512387596561726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_9
+      rect:
+        serializedVersion: 2
+        x: 4892
+        y: 5420
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc065fa29c1570a0800000000000000
+      internalID: -6884565039033479947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4336
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969be962545234140800000000000000
+      internalID: 4702643414835837289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_11
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 4336
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825fb25053aac41e0800000000000000
+      internalID: -2212206172249000664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_12
+      rect:
+        serializedVersion: 2
+        x: 2446
+        y: 4336
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7991080e2596e90800000000000000
+      internalID: -7031998218987005997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_13
+      rect:
+        serializedVersion: 2
+        x: 3669
+        y: 4336
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803e1003e197259d0800000000000000
+      internalID: -2787032048827505912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_14
+      rect:
+        serializedVersion: 2
+        x: 4892
+        y: 4336
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c707b42ab465f250800000000000000
+      internalID: 5977794831046870980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3252
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc90bf83cbdcbd80800000000000000
+      internalID: -8233464385764287238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_16
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 3252
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176a988d53b9a5960800000000000000
+      internalID: 7591550777454863985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_17
+      rect:
+        serializedVersion: 2
+        x: 2446
+        y: 3252
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e1bd33076b480c0800000000000000
+      internalID: -4574330728478990810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_18
+      rect:
+        serializedVersion: 2
+        x: 3669
+        y: 3252
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e99c6bf3d0dc9c0800000000000000
+      internalID: -3905450734559584725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_19
+      rect:
+        serializedVersion: 2
+        x: 4892
+        y: 3252
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63baa7911d8142350800000000000000
+      internalID: 5990940690664303414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2168
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eba2853103af42110800000000000000
+      internalID: 1235387282196277950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_21
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 2168
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8cb5ccbccf49d40800000000000000
+      internalID: 5590370989710756004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_22
+      rect:
+        serializedVersion: 2
+        x: 2446
+        y: 2168
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40500ace16fc3cc80800000000000000
+      internalID: -8303565268452375292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_23
+      rect:
+        serializedVersion: 2
+        x: 3669
+        y: 2168
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9955b179693bc7c0800000000000000
+      internalID: -4050080314847569510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_24
+      rect:
+        serializedVersion: 2
+        x: 4892
+        y: 2168
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d754d5d400e18e0800000000000000
+      internalID: -1720937675331633831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1084
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c999a53844963ab40800000000000000
+      internalID: 5450315717030877596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_26
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 1084
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82070d8bbfded570800000000000000
+      internalID: 8493471943885259405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_27
+      rect:
+        serializedVersion: 2
+        x: 2446
+        y: 1084
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d299a79e373de90800000000000000
+      internalID: -7002125549009556216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_28
+      rect:
+        serializedVersion: 2
+        x: 3669
+        y: 1084
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16c4974bd78068f0800000000000000
+      internalID: -549289778670680546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_29
+      rect:
+        serializedVersion: 2
+        x: 4892
+        y: 1084
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db66fd3f6eef202e0800000000000000
+      internalID: -2160884603296979267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb723d36d82e20e0800000000000000
+      internalID: -2292850259670172700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_31
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 0
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7982039b652d97c60800000000000000
+      internalID: 7816509898194167959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_32
+      rect:
+        serializedVersion: 2
+        x: 2446
+        y: 0
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b315adaac3ef02b80800000000000000
+      internalID: -8421451766664900293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_33
+      rect:
+        serializedVersion: 2
+        x: 3669
+        y: 0
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af7e198cc05d53a00800000000000000
+      internalID: 735728365026273274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosq2_Look_34
+      rect:
+        serializedVersion: 2
+        x: 4892
+        y: 0
+        width: 1223
+        height: 1084
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57e57bb4d75799f0800000000000000
+      internalID: -461803865592436898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,46 @@
+	
+--------------Mosquito 2D---------------------------
+
+2D Animation spritesheet of Mosquito with 7 animations.Mosquito comes with two variation and has Fly ,Hit, death and many basic animations in it.Animation done with png sequences.You can use the pack in commercial purpose.
+
+Technical Details:-
+		
+		- Total Spritesheets : 14
+		- Design type : Cartoony, 2D
+		- Characters : Mosquito, Old wizard mosquito
+		- Animations : 7(Fly, Attack, Half_dead, Dead, Tired, Hit, Look)
+		- File format : PNG
+		- Sheet Resolution and Frames count: 
+			Mosquito_attack - 5305 x 3416 (20 Frames)
+			Mosquito_Dead  - 1061 x 854(1 Frame)
+			Mosquito_Half Dead  - 5305 x 1708 (10)
+			Mosquito_Hit - 5305 x 2562 (15)
+			Mosquito_FlyIdle - 5305 x 3416 (20)
+			Mosquito_Look - 5305 x 5978 (35)
+			Mosquito_Tired - 5305 x 3416(20)
+			
+Features:-
+	- Different unique mosquitos
+	- Cute and funny character
+	- Smooth loop animations (30 fps abow)
+	- Easy to adjust speed of the animation using unity editor
+	- Prefabs included
+	- Rigidbody, 2D Box colliders attached
+	- Easy to use(Drag and drop)
+	- Well arranged folders
+	- High quality images
+	- Mobile supported
+	- Demo scenes & Guides included
+	
+How to use:-
+	
+	Simply drag and drop any Spritesheet animation from the Prefab (Mosquito > Prefabs) folder
+	to your scene and use it.
+
+..................................................................................
+
+About Me : "SR Studios Kerala", Indie Game developer & 3D-2D Genaralist Artist from Alappuzha, Kerala, India
+
+Contact : srstudioskerala@gmail.com
+
+................Thank you for downloading this package................................
