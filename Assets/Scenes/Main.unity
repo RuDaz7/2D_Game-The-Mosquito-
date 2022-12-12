@@ -5202,6 +5202,7 @@ GameObject:
   - component: {fileID: 312645197}
   - component: {fileID: 312645196}
   - component: {fileID: 312645193}
+  - component: {fileID: 312645198}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5453,6 +5454,22 @@ MonoBehaviour:
   aim: {fileID: 714910828}
   bulletPrefab: {fileID: 3781259781071780202, guid: 9dc2440a3a5e1f64f9665c43308c4452, type: 3}
   isJumping: 0
+--- !u!58 &312645198
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312645190}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.12
 --- !u!1 &312875703
 GameObject:
   m_ObjectHideFlags: 0
@@ -28784,6 +28801,7 @@ GameObject:
   - component: {fileID: 1489951081}
   - component: {fileID: 1489951082}
   - component: {fileID: 1489951080}
+  - component: {fileID: 1489951083}
   m_Layer: 0
   m_Name: Mosq
   m_TagString: Untagged
@@ -29049,14 +29067,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Die_Particle: {fileID: 19800006, guid: 42f257b24c959a44794a35d032e9da12, type: 3}
-  enemy: {fileID: 1489951077}
   count: 0
-  WalkTime: 0
-  Stop: 0
-  Target: 0
   target: {fileID: 312645192}
-  StopTime: 0
-  enemyMoveSpeed: 0
   direction: {x: 0, y: 0, z: 0}
   velocity: 0
   accelaration: 0
@@ -29079,6 +29091,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &1489951083
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489951077}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.5
 --- !u!1 &1513750455
 GameObject:
   m_ObjectHideFlags: 0
