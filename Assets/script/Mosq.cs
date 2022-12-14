@@ -8,13 +8,14 @@ public class Mosq : MonoBehaviour
     bool HP = false; //사망 초기값은 펄스
     public float count; //맞은 횟수
     Vector3 position;
-    public Transform target; //목표
+    //public Transform target; //목표
     public Vector3 direction;
     public float velocity;
     public float accelaration;
     Animator anime;
     SpriteRenderer spriteRenderer;
-
+    //
+    GameObject obj1;
     void Start()
     {
         anime = GetComponent<Animator>(); //애니메이션 사용을 위해 가져옴
@@ -27,20 +28,36 @@ public class Mosq : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(target.position.x > this.transform.localPosition.x) //방향 전환
+        //
+        obj1 = GameObject.Find("Player");
+        if
+        (obj1.transform.position.x > this.transform.position.x)
         {
-            spriteRenderer.flipX = true;
+             spriteRenderer.flipX = true;
         }
-         if(target.position.x < this.transform.localPosition.x) //방향 전환
+        if(obj1.transform.position.x < this.transform.position.x) //방향 전환
         {
             spriteRenderer.flipX = false;
         }
+        
+        // if(target.position.x > this.transform.localPosition.x) //방향 전환
+        // {
+        //     spriteRenderer.flipX = true;
+        // }
+        //  if(target.position.x < this.transform.localPosition.x) //방향 전환
+        // {
+        //     spriteRenderer.flipX = false;
+        // }
 
-        direction = (target.position - transform.position).normalized;
+        // direction = (target.position - transform.position).normalized;
+        // accelaration = 0.008f;
+        // velocity = (velocity + accelaration * Time.deltaTime);
+        // float distance1 = Vector3.Distance(target.position, transform.position); 
+
+        direction = (obj1.transform.position - transform.position).normalized;
         accelaration = 0.008f;
         velocity = (velocity + accelaration * Time.deltaTime);
-    
-        float distance1 = Vector3.Distance(target.position, transform.position); 
+        float distance1 = Vector3.Distance(obj1.transform.position, transform.position); 
 
         if (distance1 < 20.0f) //두 물체간의 거리가 20보다 작으면 발견한 거임
         {
