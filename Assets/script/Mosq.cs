@@ -14,8 +14,9 @@ public class Mosq : MonoBehaviour
     public float accelaration;
     Animator anime;
     SpriteRenderer spriteRenderer;
+    public int score;
     //
-    GameObject obj1;
+    GameObject target;
     void Start()
     {
         anime = GetComponent<Animator>(); //애니메이션 사용을 위해 가져옴
@@ -29,17 +30,17 @@ public class Mosq : MonoBehaviour
     void Update()
     {
         //
-        obj1 = GameObject.Find("Player");
+        target = GameObject.Find("Player");
         if
-        (obj1.transform.position.x > this.transform.position.x)
+        (target.transform.position.x > this.transform.position.x)
         {
              spriteRenderer.flipX = true;
         }
-        if(obj1.transform.position.x < this.transform.position.x) //방향 전환
+        if(target.transform.position.x < this.transform.position.x) //방향 전환
         {
             spriteRenderer.flipX = false;
         }
-        
+
         // if(target.position.x > this.transform.localPosition.x) //방향 전환
         // {
         //     spriteRenderer.flipX = true;
@@ -53,12 +54,12 @@ public class Mosq : MonoBehaviour
         // accelaration = 0.008f;
         // velocity = (velocity + accelaration * Time.deltaTime);
         // float distance1 = Vector3.Distance(target.position, transform.position); 
-
-        direction = (obj1.transform.position - transform.position).normalized;
+        direction = (target.transform.position - transform.position).normalized;
         accelaration = 0.008f;
         velocity = (velocity + accelaration * Time.deltaTime);
-        float distance1 = Vector3.Distance(obj1.transform.position, transform.position); 
 
+        float distance1 = Vector3.Distance(target.transform.position, transform.position); 
+        
         if (distance1 < 20.0f) //두 물체간의 거리가 20보다 작으면 발견한 거임
         {
             this.transform.position = new Vector3(transform.position.x + 
@@ -81,7 +82,14 @@ public class Mosq : MonoBehaviour
                 ParticleSystem instance = Instantiate(Die_Particle, transform.position, Quaternion.identity); 
                 instance.Play();
                 Destroy(instance.gameObject, instance.main.duration); 
-                Destroy(this.gameObject); 
+                Destroy(this.gameObject, 0.5f); 
+
+                //y축 반전
+                spriteRenderer.flipY = true;
+                //낙하
+                BoxCollider2D coll = gameObject.GetComponent<BoxCollider2D>();
+                coll.enabled = false;
+                score += 1;
             }
         }
 
