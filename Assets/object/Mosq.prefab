@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8868368642377156505}
   m_Layer: 0
   m_Name: Mosq
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,6 +103,7 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   velocity: 0
   accelaration: 0
+  score: 0
 --- !u!95 &8868368642377156507
 Animator:
   serializedVersion: 3

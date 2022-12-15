@@ -8,28 +8,23 @@ public class Mosq : MonoBehaviour
     bool HP = false; //사망 초기값은 펄스
     public float count; //맞은 횟수
     Vector3 position;
-    //public Transform target; //목표
     public Vector3 direction;
     public float velocity;
     public float accelaration;
     Animator anime;
     SpriteRenderer spriteRenderer;
     public int score;
-    //
     GameObject target;
     void Start()
-    {
+    {   
         anime = GetComponent<Animator>(); //애니메이션 사용을 위해 가져옴
         spriteRenderer = GetComponent<SpriteRenderer>(); //반향 전향을 위해 가져옴
         position = transform.position;
         count = 1; 
         GetComponent<AudioSource>().Play();
     }
-
-    // Update is called once per frame
     void Update()
     {
-        //
         target = GameObject.Find("Player");
         if
         (target.transform.position.x > this.transform.position.x)
@@ -41,19 +36,6 @@ public class Mosq : MonoBehaviour
             spriteRenderer.flipX = false;
         }
 
-        // if(target.position.x > this.transform.localPosition.x) //방향 전환
-        // {
-        //     spriteRenderer.flipX = true;
-        // }
-        //  if(target.position.x < this.transform.localPosition.x) //방향 전환
-        // {
-        //     spriteRenderer.flipX = false;
-        // }
-
-        // direction = (target.position - transform.position).normalized;
-        // accelaration = 0.008f;
-        // velocity = (velocity + accelaration * Time.deltaTime);
-        // float distance1 = Vector3.Distance(target.position, transform.position); 
         direction = (target.transform.position - transform.position).normalized;
         accelaration = 0.008f;
         velocity = (velocity + accelaration * Time.deltaTime);
@@ -82,7 +64,7 @@ public class Mosq : MonoBehaviour
                 ParticleSystem instance = Instantiate(Die_Particle, transform.position, Quaternion.identity); 
                 instance.Play();
                 Destroy(instance.gameObject, instance.main.duration); 
-                Destroy(this.gameObject, 0.5f); 
+                Destroy(this.gameObject, 0.3f); 
 
                 //y축 반전
                 spriteRenderer.flipY = true;

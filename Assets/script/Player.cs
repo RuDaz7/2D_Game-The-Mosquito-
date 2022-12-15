@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     SpriteRenderer spriteRenderer;
     Animator anime;
     Rigidbody2D rigid;
+    public ParticleSystem particleObject; //파티클시스템
 
     void Start()
     {
@@ -22,6 +23,7 @@ public class Player : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         anime = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody2D>();
+        particleObject.Stop();
     }
 
     // Update is called once per frame    
@@ -30,6 +32,12 @@ public class Player : MonoBehaviour
     public bool isJumping;
     void Update()
     {
+         if(Input.GetKeyDown(KeyCode.Q))
+            {
+            speed = 13;
+            particleObject.Play();
+            }
+
         //점프
         if(isJumping == true)
         {
@@ -40,17 +48,9 @@ public class Player : MonoBehaviour
             anime.SetBool("Jump_On", true);
         }
         }
-
-        //에임 없을 시 방향 전환
-    //    if(Input.GetButtonDown("Horizontal"))
-    //    {
-    //     spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
-    //    }
    
         //이동
         float xMove = Input.GetAxis("Horizontal") * speed * Time.deltaTime; //x축으로 이동할 양
-        //float yMove = Input.GetAxis("Vertical") * speed * Time.deltaTime; //y축으로 이동할양
-        //this.transform.Translate(new Vector3(xMove, yMove, 0));  //이동
           this.transform.Translate(new Vector3(xMove, 0, 0));  //이동
 
         //워킹 애니메이션 조건
