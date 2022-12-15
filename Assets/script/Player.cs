@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
     {
          if(Input.GetKeyDown(KeyCode.Q))
             {
-            speed = 13;
+            speed += 3;
             particleObject.Play();
             }
 

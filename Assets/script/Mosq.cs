@@ -13,7 +13,6 @@ public class Mosq : MonoBehaviour
     public float accelaration;
     Animator anime;
     SpriteRenderer spriteRenderer;
-    public int score;
     GameObject target;
     void Start()
     {   
@@ -26,8 +25,8 @@ public class Mosq : MonoBehaviour
     void Update()
     {
         target = GameObject.Find("Player");
-        if
-        (target.transform.position.x > this.transform.position.x)
+        
+        if(target.transform.position.x > this.transform.position.x)
         {
              spriteRenderer.flipX = true;
         }
@@ -61,6 +60,7 @@ public class Mosq : MonoBehaviour
             count += 1;
             if (HP == true) 
             {
+                DateManager.Instance.DiePoints += 1; //킬 수 기록
                 ParticleSystem instance = Instantiate(Die_Particle, transform.position, Quaternion.identity); 
                 instance.Play();
                 Destroy(instance.gameObject, instance.main.duration); 
@@ -71,7 +71,6 @@ public class Mosq : MonoBehaviour
                 //낙하
                 BoxCollider2D coll = gameObject.GetComponent<BoxCollider2D>();
                 coll.enabled = false;
-                score += 1;
             }
         }
 
