@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     Animator anime;
     Rigidbody2D rigid;
     public ParticleSystem particleObject; //파티클시스템
+    public AudioClip clip;
 
     void Start()
     {
@@ -30,9 +31,16 @@ public class Player : MonoBehaviour
     int speed = 10;
     int JumpPower = 10;
     public bool isJumping;
+    public bool SpeedRun;
     void Update()
     {
-         if(Input.GetKeyDown(KeyCode.Q))
+        if(DateManager.Instance.DiePoints >= 50)
+        {
+            SpeedRun = true;
+        }
+        else SpeedRun = false;
+
+         if(Input.GetKeyDown(KeyCode.Q) && SpeedRun == true)
             {
             speed += 3;
             particleObject.Play();
@@ -84,6 +92,7 @@ public class Player : MonoBehaviour
             bullet.direction = direction;
             bullet.speed = 20;
             GetComponent<AudioSource>().Play();
+            //SoundManager.instance.SFXPlay("Shoot", clip);
         }
     }
     void OnCollisionEnter2D(Collision2D other) 
@@ -115,5 +124,4 @@ public class Player : MonoBehaviour
         }
 
     }
-
 }

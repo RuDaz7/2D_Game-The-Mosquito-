@@ -45,18 +45,10 @@ public class DateManager : MonoBehaviour
     }
     public void Score()
     {
-        if(ScorePoints > 10)
-        {
-            Debug.Log("10포인트 달성");
-        }
+        
     }
     public void Die()
         {
          DiePoints = 0;
-
-            if(DiePoints > 10)
-        {
-            Debug.Log("10킬 달성");
-        }
         }
 }
