@@ -3,6 +3,28 @@
 > 무더운 여름 모기로 밤잠을 설치던 한 남자
 > 꿈속에서 그토록 자신을 괴롭히던 모기를 사냥할 수 있게 된다.  
 
+## 개발과정
+>**문제1** 에임 위치에 따라 플레이어 방향이 결정되도록 변경 필요.
+>>해결방법  
+if(worldPos.x < this.transform.localPosition.x)  
+        {  
+            spriteRenderer.flipX = true;  
+        }  
+         if(worldPos.x > this.transform.localPosition.x)  
+        {  
+            spriteRenderer.flipX = false;  
+        }    
+플레이어의 위치와 에임의 위치를 비교하고  
+flipX이용하여 해결.  
+
+>**문제2** 모기의 플레이어 target방법으로 기존에는 플레이어 오브젝트를 인스펙터 창으로 끌어와 사용 그러나  
+>prefab한 모기 오프젝트는 더 이상 플레이어를 드래그 앤 드롭으로 할당 받을 수 없게됨. 
+>>해결방법  
+>>GameObject를 찾아주는 GameObject.Find() 를 이용하여 해결.  
+
+>**문제3** 플레이어의 총구 방향이 y축에서도 에임을 향하도록 수정 필요.
+>>해결방법
+
 + ## 게임방법  
 > ### 짜증나는 모기를 잡으며 강해지자!
 > > 모기에게서 오래 살아남을 수록 **고혈압 게이지 상승**
@@ -11,3 +33,4 @@
 > > Coin으로 각종 아이템 구매 가능
 
 + ## 미완성 게임 플레이 영상
+> ![플레이영상GIF](https://user-images.githubusercontent.com/90640499/209376586-19b81243-fa7f-4f34-9bbd-dd066ed11a0c.gif)
