@@ -42,4 +42,4 @@ flipX이용하여 해결.
 > ![playGif](https://user-images.githubusercontent.com/90640499/209385366-dc3794c6-3bf2-4c8e-b55f-716e9d2a1526.gif)
 
 + ## 타이틀 및 엔딩씬들
-> 
+> <img width="50%" src="https://user-images.githubusercontent.com/90640499/209391311-981ea87f-6c64-4dd6-9494-1d10d4fe1075.png"/>  
