@@ -33,4 +33,4 @@ flipX이용하여 해결.
 > > Coin으로 각종 아이템 구매 가능
 
 + ## 미완성 게임 플레이 영상
-> ![플레이영상GIF](https://user-images.githubusercontent.com/90640499/209376586-19b81243-fa7f-4f34-9bbd-dd066ed11a0c.gif)
+> ![playGif](https://user-images.githubusercontent.com/90640499/209385366-dc3794c6-3bf2-4c8e-b55f-716e9d2a1526.gif)
