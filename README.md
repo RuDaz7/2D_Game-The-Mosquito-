@@ -1,2 +1,2 @@
-# 2D_Game-The-Mosquito-
+# 모기 헌터-
 Game Development Contest Test
