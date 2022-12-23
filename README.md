@@ -42,9 +42,9 @@ flipX이용하여 해결.
 > ![playGif](https://user-images.githubusercontent.com/90640499/209385366-dc3794c6-3bf2-4c8e-b55f-716e9d2a1526.gif)
 
 + ## 타이틀 및 엔딩씬들
-> <img width="50%" src="https://user-images.githubusercontent.com/90640499/209391311-981ea87f-6c64-4dd6-9494-1d10d4fe1075.png"/> 타이틀
+> <img width="50%" src="https://user-images.githubusercontent.com/90640499/209391311-981ea87f-6c64-4dd6-9494-1d10d4fe1075.png"/> **타이틀**
 --- 
-> <img width="50%" src="https://user-images.githubusercontent.com/90640499/209391798-e55a7565-9d6f-4d6a-8fc4-ea33f3ec8a17.png"/> 승리
+> <img width="50%" src="https://user-images.githubusercontent.com/90640499/209391798-e55a7565-9d6f-4d6a-8fc4-ea33f3ec8a17.png"/> **승리**
 --- 
-> <img width="50%" src="https://user-images.githubusercontent.com/90640499/209391802-d7abfdca-508c-4b01-bb46-c5ce4ad726d0.png"/> 패배
+> <img width="50%" src="https://user-images.githubusercontent.com/90640499/209391802-d7abfdca-508c-4b01-bb46-c5ce4ad726d0.png"/> **패배**
 --- 
