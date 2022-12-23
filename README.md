@@ -40,3 +40,6 @@ flipX이용하여 해결.
   
 + ## 미완성 게임 플레이 영상_2022/12/23기준
 > ![playGif](https://user-images.githubusercontent.com/90640499/209385366-dc3794c6-3bf2-4c8e-b55f-716e9d2a1526.gif)
+
++ ## 타이틀 및 엔딩씬들
+> 
