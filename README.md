@@ -6,7 +6,7 @@
 + ## 개발과정
 >**문제1** 에임 위치에 따라 플레이어 방향이 결정되도록 변경 필요.
 >>해결방법  
-'''  
+``` 
 if(worldPos.x < this.transform.localPosition.x)  
         {  
             spriteRenderer.flipX = true;  
@@ -14,8 +14,8 @@ if(worldPos.x < this.transform.localPosition.x)
          if(worldPos.x > this.transform.localPosition.x)  
         {  
             spriteRenderer.flipX = false;  
-        }
-        '''  
+        }  
+```  
 플레이어의 위치와 에임의 위치를 비교하고  
 flipX이용하여 해결.  
 
