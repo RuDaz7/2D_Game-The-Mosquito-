@@ -33,10 +33,10 @@ if(worldPos.x < this.transform.localPosition.x)
 ---  
 + ## 게임방법  
 > ### **짜증나는 모기를 잡으며 강해지자!**
-> > 모기에게서 오래 살아남을 수록 **고혈압 게이지 상승**
-> > 모기를 잡을 수록 **Coin Get**
-> > 고혈압 게이지로 "Skill" 습득 가능  
-> > Coin으로 각종 아이템 구매 가능
+>  모기에게서 오래 살아남을 수록 **고혈압 게이지 상승**
+>  모기를 잡을 수록 **Coin Get**
+>  고혈압 게이지로 "Skill" 습득 가능  
+>  Coin으로 각종 아이템 구매 가능
   
 + ## 미완성 게임 플레이 영상_2022/12/23기준
 > ![playGif](https://user-images.githubusercontent.com/90640499/209385366-dc3794c6-3bf2-4c8e-b55f-716e9d2a1526.gif)
