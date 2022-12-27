@@ -21,4 +21,4 @@
 > <img width="50%" src="https://user-images.githubusercontent.com/90640499/209391802-d7abfdca-508c-4b01-bb46-c5ce4ad726d0.png"/> **패배**
 --- 
 
-+ ## 스킬 및 
++ ## 스킬 및 아이템들  
