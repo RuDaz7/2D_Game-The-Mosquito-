@@ -2590,7 +2590,7 @@ MonoBehaviour:
   - {fileID: 58038347}
   - {fileID: 262030152}
   - {fileID: 2055607897}
-  mosqPrefab: {fileID: 8868368642377156504, guid: 904d35040a3220a41b628211c56f16b9, type: 3}
+  mosqPrefab: {fileID: 9058311877945183977, guid: 904d35040a3220a41b628211c56f16b9, type: 3}
 --- !u!1 &154108124
 GameObject:
   m_ObjectHideFlags: 0
