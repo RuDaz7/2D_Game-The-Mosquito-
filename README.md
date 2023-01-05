@@ -12,7 +12,10 @@
   
 + ## 미완성 게임 플레이 영상_2022/12/23_기준
 > ![playGif](https://user-images.githubusercontent.com/90640499/209385366-dc3794c6-3bf2-4c8e-b55f-716e9d2a1526.gif)
-
+---
++ ## 타이틀_2022/01/05_기준
+![2D_Game-The-Mosquito-TitleScene-PC_-Mac-_-Linux-Standalone-Unity-2020 3](https://user-images.githubusercontent.com/90640499/210773170-75551f09-ed19-41b2-84bb-25b8ffd850a5.gif)
+---
 + ## 타이틀 및 엔딩씬들
 > <img width="50%" src="https://user-images.githubusercontent.com/90640499/209391311-981ea87f-6c64-4dd6-9494-1d10d4fe1075.png"/> **타이틀**
 --- 
@@ -20,5 +23,4 @@
 --- 
 > <img width="50%" src="https://user-images.githubusercontent.com/90640499/209391802-d7abfdca-508c-4b01-bb46-c5ce4ad726d0.png"/> **패배**
 --- 
-
 + ## 스킬 및 아이템들  
