@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 
 {
     public ParticleSystem explosionParticle;
-    bool HP = false;
+    public static bool HP = false;
     public float count;
     public Transform aim;
     public GameObject bulletPrefab; //가지고올 프리팹

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Mosq : MonoBehaviour
 {
+    public static bool Boss_HP = false;
     public ParticleSystem Die_Particle; //모기 사망 임팩트
     bool HP = false; //사망 초기값은 펄스
     public float count; //맞은 횟수
