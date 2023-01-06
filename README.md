@@ -15,6 +15,8 @@
 ---
 + ## 타이틀_2022/01/05_기준
 ![2D_Game-The-Mosquito-TitleScene-PC_-Mac-_-Linux-Standalone-Unity-2020 3](https://user-images.githubusercontent.com/90640499/210773170-75551f09-ed19-41b2-84bb-25b8ffd850a5.gif)
++ ## 타이틀_2022/01/06_기준
+![1월6일](https://user-images.githubusercontent.com/90640499/210922616-321e5934-5645-4b38-a781-a6b3b5e49a94.gif)
 ---
 + ## 타이틀 및 엔딩씬들
 > <img width="50%" src="https://user-images.githubusercontent.com/90640499/209391311-981ea87f-6c64-4dd6-9494-1d10d4fe1075.png"/> **타이틀**
