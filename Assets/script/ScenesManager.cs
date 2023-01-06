@@ -9,10 +9,21 @@ public class ScenesManager : MonoBehaviour
     {
         SceneManager.LoadScene("Main");
     }
-
     public void Click_ExitGame()
     {
         Application.Quit();
+    }
+    public void Click_Title()
+    {
+        SceneManager.LoadScene("TitleScene");
+    }
+       public void Game_Lost()
+    {
+        SceneManager.LoadScene("LostScene");
+    }
+          public void Game_Clear()
+    {
+        SceneManager.LoadScene("ClearScene");
     }
 
    // Update is called once per frame
@@ -23,17 +34,19 @@ public class ScenesManager : MonoBehaviour
         Application.Quit();
     }
 
-         if (Input.GetKeyDown(KeyCode.Backspace))
+    if (Input.GetKeyDown(KeyCode.Backspace))
     { 
         SceneManager.LoadScene("TitleScene");
     }
-    if(Player.HP == true)
+     if(Player.HP == true)
     {
         SceneManager.LoadScene("LostScene");
+        Player.HP = false;
     }
     if(Mosq.Boss_HP == true)
     {
         SceneManager.LoadScene("ClearScene");
+        Mosq.Boss_HP = false;
     }
     }
 }

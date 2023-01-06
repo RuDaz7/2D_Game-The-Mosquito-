@@ -667,7 +667,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 347904528}
         m_TargetAssemblyTypeName: ScenesManager, Assembly-CSharp
-        m_MethodName: Click_LoadMainGameScene
+        m_MethodName: Click_Title
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
