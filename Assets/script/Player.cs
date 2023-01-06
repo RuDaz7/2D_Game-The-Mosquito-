@@ -122,6 +122,9 @@ public class Player : MonoBehaviour
                 Destroy(this.gameObject);
             }
         }
-
+        if (other.gameObject.tag.Equals("Deadline"))
+        {
+            gameObject.transform.position = new Vector3(-80, 1.7f, 0);
+        }
     }
 }

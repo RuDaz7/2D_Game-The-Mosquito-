@@ -9,6 +9,7 @@ TagManager:
   - door
   - FxTemporaire
   - Ground
+  - Deadline
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - Water
   - UI
   - Mosq
-  - 
+  - Deadline
   - 
   - 
   - 
