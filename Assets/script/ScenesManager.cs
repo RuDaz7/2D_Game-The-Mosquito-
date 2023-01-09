@@ -43,7 +43,7 @@ public class ScenesManager : MonoBehaviour
         SceneManager.LoadScene("LostScene");
         Player.HP = false;
     }
-    if(Mosq.Boss_HP == true)
+    if(Mosq.Boss_HP == true || DateManager.Instance.DiePoints == 30)
     {
         SceneManager.LoadScene("ClearScene");
         Mosq.Boss_HP = false;

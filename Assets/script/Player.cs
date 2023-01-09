@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
     public bool SpeedRun;
     void Update()
     {
-        if(DateManager.Instance.DiePoints >= 50)
+        if(DateManager.Instance.DiePoints >= 20)
         {
             SpeedRun = true;
         }
