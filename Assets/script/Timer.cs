@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public float Ltime;
+    public float MaxTime;
     public Text text_Timer;
 
     // Update is called once per frame
     void Update()
     {
-        Ltime -= Time.deltaTime;
-        text_Timer.text = "�ð�: " + Mathf.Round(Ltime);
+        MaxTime += Time.deltaTime;
+        text_Timer.text = Mathf.Round(MaxTime) + "초 버팀";
     }
 }

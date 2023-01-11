@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 210262658}
   - component: {fileID: 210262660}
   - component: {fileID: 210262659}
+  - component: {fileID: 210262661}
   m_Layer: 5
   m_Name: LostBack
   m_TagString: Untagged
@@ -180,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 89b99f7f9cc85664291ce2918c16de66, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c91e73953f775ea4eb511d3d10bc7763, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -198,6 +199,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 210262657}
   m_CullTransparentMesh: 1
+--- !u!95 &210262661
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210262657}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d05f2dd0ecbc45546835638a422caf08, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &229713314
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,7 +412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8301887, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.6745098, g: 0.25438294, b: 0.08497683, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -412,7 +432,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB2E4\uC2DC \uD558\uAE30 "
+  m_Text: Replay
 --- !u!222 &437226686
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -456,8 +476,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 84, y: -38}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 84, y: -36.5}
+  m_SizeDelta: {x: 0, y: 3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &702107380
 MonoBehaviour:
@@ -786,7 +806,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 117, y: -213}
-  m_SizeDelta: {x: 300, y: 60}
+  m_SizeDelta: {x: 220, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1226186813
 MonoBehaviour:
@@ -938,11 +958,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9058311877945183974, guid: 904d35040a3220a41b628211c56f16b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9
+      value: -7.68
       objectReference: {fileID: 0}
     - target: {fileID: 9058311877945183974, guid: 904d35040a3220a41b628211c56f16b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.42
+      value: -0.61
       objectReference: {fileID: 0}
     - target: {fileID: 9058311877945183974, guid: 904d35040a3220a41b628211c56f16b9, type: 3}
       propertyPath: m_LocalPosition.z

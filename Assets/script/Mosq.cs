@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Mosq : MonoBehaviour
 {
-    public static bool Boss_HP = false;
+    public static bool Boss_HP_Zero = false;
     public ParticleSystem Die_Particle; //모기 사망 임팩트
     bool HP = false; //사망 초기값은 펄스
     public float count; //맞은 횟수
@@ -15,6 +15,7 @@ public class Mosq : MonoBehaviour
     Animator anime;
     SpriteRenderer spriteRenderer;
     GameObject target;
+    public AudioClip Die_clip; 
     void Start()
     {   
         anime = GetComponent<Animator>(); //애니메이션 사용을 위해 가져옴
@@ -73,6 +74,7 @@ public class Mosq : MonoBehaviour
                 BoxCollider2D coll = gameObject.GetComponent<BoxCollider2D>();
                 coll.enabled = false;
             }
+            SoundManager.instance.SFXPlay("BossCritical", Die_clip);
         }
 
         if(other.gameObject.tag.Equals("Player"))

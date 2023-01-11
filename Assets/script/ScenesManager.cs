@@ -16,14 +16,21 @@ public class ScenesManager : MonoBehaviour
     public void Click_Title()
     {
         SceneManager.LoadScene("TitleScene");
+        DateManager.Instance.Die();
     }
        public void Game_Lost()
     {
         SceneManager.LoadScene("LostScene");
+        DateManager.Instance.Die();
     }
           public void Game_Clear()
     {
-        SceneManager.LoadScene("ClearScene");
+        SceneManager.LoadScene("WinScene");
+        DateManager.Instance.Die();
+    }
+           public void Ranking()
+    {
+        SceneManager.LoadScene("Rank");
     }
 
    // Update is called once per frame
@@ -38,15 +45,16 @@ public class ScenesManager : MonoBehaviour
     { 
         SceneManager.LoadScene("TitleScene");
     }
-     if(Player.HP == true)
+     if(Player.HP_Zero == true)
     {
         SceneManager.LoadScene("LostScene");
-        Player.HP = false;
+        Player.HP_Zero = false;
     }
-    if(Mosq.Boss_HP == true || DateManager.Instance.DiePoints == 30)
+    if(Mosq.Boss_HP_Zero == true || DateManager.Instance.DiePoints == 30)
     {
-        SceneManager.LoadScene("ClearScene");
-        Mosq.Boss_HP = false;
+        SceneManager.LoadScene("WinScene");
+        Mosq.Boss_HP_Zero = false;
+        DateManager.Instance.Die();
     }
     }
 }

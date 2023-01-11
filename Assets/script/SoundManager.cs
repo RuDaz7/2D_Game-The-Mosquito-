@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public static SoundManager instance;
+  public static SoundManager instance;
   private void Awake() 
     {
         if(instance == null)
         {
             instance = this; //자신을 넣어줘라
-            
             DontDestroyOnLoad(instance); //씬 전환되도 파괴안됨
         } 
         else
@@ -20,10 +19,11 @@ public class SoundManager : MonoBehaviour
     }
     public void SFXPlay(string sfxName, AudioClip clip)
     {
-        GameObject sd = new GameObject(sfxName + "Sound");
-        AudioSource audioSource = sd.AddComponent<AudioSource>();
+        GameObject go = new GameObject(sfxName + "Sound");
+        AudioSource audioSource = go.AddComponent<AudioSource>();
         audioSource.clip = clip;
         audioSource.Play();
-        Destroy(sd, clip.length);
+
+        Destroy(go, clip.length);
     }
 }

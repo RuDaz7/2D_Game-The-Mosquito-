@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 
 {
     public ParticleSystem explosionParticle;
-    public static bool HP = false;
+    public static bool HP_Zero = false;
     public float count;
     public Transform aim;
     public GameObject bulletPrefab; //가지고올 프리팹
@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     Animator anime;
     Rigidbody2D rigid;
     public ParticleSystem particleObject; //파티클시스템
-    public AudioClip clip;
+    public AudioClip clip; //
 
     void Start()
     {
@@ -91,8 +91,8 @@ public class Player : MonoBehaviour
 
             bullet.direction = direction;
             bullet.speed = 20;
-            GetComponent<AudioSource>().Play();
-            //SoundManager.instance.SFXPlay("Shoot", clip);
+            //GetComponent<AudioSource>().Play();
+            SoundManager.instance.SFXPlay("Shoot", clip);
         }
     }
     void OnCollisionEnter2D(Collision2D other) 
@@ -107,14 +107,14 @@ public class Player : MonoBehaviour
     {
         if (count == 3)
         {
-            HP = true;
+            HP_Zero = true;
         }
 
         if (other.gameObject.tag.Equals("enemy"))
         {
             count += 1;
 
-            if (HP == true)
+            if (HP_Zero == true)
             {
                 ParticleSystem instance = Instantiate(explosionParticle, transform.position, Quaternion.identity);
                 instance.Play();
