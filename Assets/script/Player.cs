@@ -105,7 +105,7 @@ public class Player : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (count == 3)
+        if (count == 3000)
         {
             HP_Zero = true;
         }
@@ -113,6 +113,8 @@ public class Player : MonoBehaviour
         if (other.gameObject.tag.Equals("enemy"))
         {
             count += 1;
+
+            PlayerHP.Player_HP -= 10f;
 
             if (HP_Zero == true)
             {
