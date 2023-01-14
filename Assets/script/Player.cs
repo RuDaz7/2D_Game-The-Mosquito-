@@ -7,8 +7,11 @@ public class Player : MonoBehaviour
 
 {
     public ParticleSystem explosionParticle;
+<<<<<<< Updated upstream
     bool HP = false;
     public float count;
+=======
+>>>>>>> Stashed changes
     public Transform aim;
     public GameObject bulletPrefab; //가지고올 프리팹
     private Camera cam; //가지고올 카메라를 cam에 저장
@@ -31,9 +34,9 @@ public class Player : MonoBehaviour
     int speed = 10;
     int JumpPower = 10;
     public bool isJumping;
-    public bool SpeedRun;
     void Update()
     {
+<<<<<<< Updated upstream
         if(DateManager.Instance.DiePoints >= 50)
         {
             SpeedRun = true;
@@ -41,6 +44,9 @@ public class Player : MonoBehaviour
         else SpeedRun = false;
 
          if(Input.GetKeyDown(KeyCode.Q) && SpeedRun == true)
+=======
+         if(Input.GetKeyDown(KeyCode.Q) && Cool_Gauge.CoolMode == true)
+>>>>>>> Stashed changes
             {
             speed += 3;
             particleObject.Play();
@@ -91,8 +97,12 @@ public class Player : MonoBehaviour
 
             bullet.direction = direction;
             bullet.speed = 20;
+<<<<<<< Updated upstream
             GetComponent<AudioSource>().Play();
             //SoundManager.instance.SFXPlay("Shoot", clip);
+=======
+            SoundManager.instance.SFXPlay("Shoot", clip);
+>>>>>>> Stashed changes
         }
     }
     void OnCollisionEnter2D(Collision2D other) 
@@ -105,16 +115,24 @@ public class Player : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
+<<<<<<< Updated upstream
         if (count == 3)
         {
             HP = true;
         }
 
+=======
+>>>>>>> Stashed changes
         if (other.gameObject.tag.Equals("enemy"))
         {
-            count += 1;
 
+<<<<<<< Updated upstream
             if (HP == true)
+=======
+            PlayerHP.Player_HP -= 10f;
+
+            if (PlayerHP.Player_HP == 0)
+>>>>>>> Stashed changes
             {
                 ParticleSystem instance = Instantiate(explosionParticle, transform.position, Quaternion.identity);
                 instance.Play();

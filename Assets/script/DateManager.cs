@@ -24,7 +24,7 @@ public class DateManager : MonoBehaviour
     void Update() 
     {
         TimeOut += Time.deltaTime;
-        if(TimeOut > 10)
+        if(TimeOut > 30)
         {
             TimeOut = 0;
             ScorePoints += 1;
