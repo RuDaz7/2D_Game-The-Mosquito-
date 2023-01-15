@@ -17,6 +17,7 @@ public class ScenesManager : MonoBehaviour
     {
         SceneManager.LoadScene("TitleScene");
         DateManager.Instance.Die();
+        PlayerHP.Player_HP = 100;
     }
        public void Game_Lost()
     {
@@ -45,10 +46,10 @@ public class ScenesManager : MonoBehaviour
     { 
         SceneManager.LoadScene("TitleScene");
     }
-     if(Player.HP_Zero == true)
+     if(PlayerHP.Player_HP == 0)
     {
-        SceneManager.LoadScene("LostScene");
-        Player.HP_Zero = false;
+        //SceneManager.LoadScene("LostScene");
+        Invoke("Click_Title", 1.5f);
     }
     if(Mosq.Boss_HP_Zero == true || DateManager.Instance.DiePoints == 30)
     {

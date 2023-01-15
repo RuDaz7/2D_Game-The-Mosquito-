@@ -7,8 +7,6 @@ public class Player : MonoBehaviour
 
 {
     public ParticleSystem explosionParticle;
-    public static bool HP_Zero = false;
-    public float count;
     public Transform aim;
     public GameObject bulletPrefab; //가지고올 프리팹
     private Camera cam; //가지고올 카메라를 cam에 저장
@@ -31,16 +29,9 @@ public class Player : MonoBehaviour
     int speed = 10;
     int JumpPower = 10;
     public bool isJumping;
-    public bool SpeedRun;
     void Update()
     {
-        if(DateManager.Instance.DiePoints >= 20)
-        {
-            SpeedRun = true;
-        }
-        else SpeedRun = false;
-
-         if(Input.GetKeyDown(KeyCode.Q) && SpeedRun == true)
+         if(Input.GetKeyDown(KeyCode.Q) &&  Cool_Gauge.CoolMode == true)
             {
             speed += 3;
             particleObject.Play();
@@ -105,18 +96,11 @@ public class Player : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (count == 3000)
-        {
-            HP_Zero = true;
-        }
-
         if (other.gameObject.tag.Equals("enemy"))
         {
-            count += 1;
-
             PlayerHP.Player_HP -= 10f;
 
-            if (HP_Zero == true)
+            if (PlayerHP.Player_HP == 0)
             {
                 ParticleSystem instance = Instantiate(explosionParticle, transform.position, Quaternion.identity);
                 instance.Play();
