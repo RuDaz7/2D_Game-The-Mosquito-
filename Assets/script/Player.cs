@@ -15,7 +15,12 @@ public class Player : MonoBehaviour
     Rigidbody2D rigid;
     public ParticleSystem particleObject; //파티클시스템
     public AudioClip clip; //
-    public static bool CoolMode_On =false;
+    public AudioClip Hap;
+    public AudioClip Blood_Boom;
+    public static bool CoolMode_On = false;
+    public static bool HighBlood;
+    public ParticleSystem HighBl_Fire;
+    public ParticleSystem HighBl_Boom;
 
     void Start()
     {
@@ -32,6 +37,18 @@ public class Player : MonoBehaviour
     public bool isJumping;
     void Update()
     {
+        //고혈압모드
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+             SoundManager.instance.SFXPlay("HighBlood_Sound", Hap);
+             Invoke("BloodBoom_Sound",0.9f);
+
+            ParticleSystem instance = Instantiate(HighBl_Fire, transform.position, Quaternion.identity);
+            instance.Play();
+            Destroy(instance.gameObject, instance.main.duration);
+        }
+
+        //쿨모드
         if(Cool_Gauge.CoolMode == true)
         {
          if(Input.GetKeyDown(KeyCode.Q))
@@ -132,5 +149,13 @@ public class Player : MonoBehaviour
         speed -= 3;
         DateManager.Instance.DiePoints = 0;
         DateManager.CoolTime = 10;
+    }
+    public void BloodBoom_Sound()
+    {
+        SoundManager.instance.SFXPlay("HighBloodSound_Boom", Blood_Boom);
+
+         ParticleSystem instance = Instantiate(HighBl_Boom, transform.position, Quaternion.identity);
+         instance.Play();
+         Destroy(instance.gameObject, instance.main.duration);
     }
 }
