@@ -14,9 +14,10 @@ public class Player : MonoBehaviour
     Animator anime;
     Rigidbody2D rigid;
     public ParticleSystem particleObject; //파티클시스템
-    public AudioClip clip; //
+    public AudioClip Shoot; //
     public AudioClip Hap;
     public AudioClip Blood_Boom;
+     public AudioClip SpeedRun_Sound;
     public static bool CoolMode_On = false;
     public static bool HighBlood;
     public ParticleSystem HighBl_Fire;
@@ -55,6 +56,7 @@ public class Player : MonoBehaviour
             {
             CoolAttack_Start();
             particleObject.Play();
+            SoundManager.instance.SFXPlay("CoolSound", SpeedRun_Sound);
             }
         }
         if(DateManager.CoolTime <= 0)
@@ -75,7 +77,7 @@ public class Player : MonoBehaviour
         }
    
         //이동
-        float xMove = Input.GetAxis("Horizontal") * speed * Time.deltaTime; //x축으로 이동할 양
+        float xMove = Input.GetAxis("Horizontal") * speed * Time.unscaledDeltaTime; //x축으로 이동할 양
           this.transform.Translate(new Vector3(xMove, 0, 0));  //이동
 
         //워킹 애니메이션 조건
@@ -109,7 +111,7 @@ public class Player : MonoBehaviour
             bullet.direction = direction;
             bullet.speed = 20;
             //GetComponent<AudioSource>().Play();
-            SoundManager.instance.SFXPlay("Shoot", clip);
+            SoundManager.instance.SFXPlay("Shoot", Shoot);
         }
     }
     void OnCollisionEnter2D(Collision2D other) 
@@ -157,5 +159,6 @@ public class Player : MonoBehaviour
          ParticleSystem instance = Instantiate(HighBl_Boom, transform.position, Quaternion.identity);
          instance.Play();
          Destroy(instance.gameObject, instance.main.duration);
+         HighBlood = true;
     }
 }

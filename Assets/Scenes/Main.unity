@@ -43855,6 +43855,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 7575f4814720b4b509b55764405171f1, type: 3}
     - target: {fileID: 2210476835805598268, guid: 6b852c0652708b64da36d84f6991569c, type: 3}
+      propertyPath: Shoot
+      value: 
+      objectReference: {fileID: 8300000, guid: 7575f4814720b4b509b55764405171f1, type: 3}
+    - target: {fileID: 2210476835805598268, guid: 6b852c0652708b64da36d84f6991569c, type: 3}
       propertyPath: Blood_Boom
       value: 
       objectReference: {fileID: 8300000, guid: 1ffa3268ea955dd428a6d199a382bb03, type: 3}
@@ -43866,6 +43870,10 @@ PrefabInstance:
       propertyPath: HighBl_Fire
       value: 
       objectReference: {fileID: 19800004, guid: 55700a754af55ac429f02417b245ae86, type: 3}
+    - target: {fileID: 2210476835805598268, guid: 6b852c0652708b64da36d84f6991569c, type: 3}
+      propertyPath: SpeedRun_Sound
+      value: 
+      objectReference: {fileID: 8300000, guid: df021642e2da91e44ad195f438e7244e, type: 3}
     - target: {fileID: 2210476835805598269, guid: 6b852c0652708b64da36d84f6991569c, type: 3}
       propertyPath: m_Enabled
       value: 0

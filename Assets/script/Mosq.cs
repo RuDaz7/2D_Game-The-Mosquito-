@@ -16,6 +16,7 @@ public class Mosq : MonoBehaviour
     SpriteRenderer spriteRenderer;
     GameObject target;
     public AudioClip Die_clip; 
+    public float Sc_Timer;
     void Start()
     {   
         anime = GetComponent<Animator>(); //애니메이션 사용을 위해 가져옴
@@ -26,6 +27,13 @@ public class Mosq : MonoBehaviour
     }
     void Update()
     {
+        Sc_Timer += Time.deltaTime;
+        if(Player.HighBlood == true)
+        {
+            Time.timeScale = 0.6f;
+        }
+        else Time.timeScale = 1f;
+
         target = GameObject.Find("Player");
         
         if(target.transform.position.x > this.transform.position.x)
@@ -75,7 +83,7 @@ public class Mosq : MonoBehaviour
                 BoxCollider2D coll = gameObject.GetComponent<BoxCollider2D>();
                 coll.enabled = false;
             }
-            SoundManager.instance.SFXPlay("BossCritical", Die_clip);
+            //SoundManager.instance.SFXPlay("BossCritical", Die_clip);
         }
 
         if(other.gameObject.tag.Equals("Player"))

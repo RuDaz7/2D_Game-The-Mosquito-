@@ -11,7 +11,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += direction * speed * Time.deltaTime; //총알의 위치는 = xyz공간에 * 속도 * 시간을 더한값 
+        transform.position += direction * speed * Time.unscaledDeltaTime; //총알의 위치는 = xyz공간에 * 속도 * 시간을 더한값 
     }
     void OnBecameInvisible() //카메라 시야 밖으로 벗어나면> 조건 함수
     {
