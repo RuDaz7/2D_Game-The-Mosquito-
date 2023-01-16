@@ -62,7 +62,8 @@ public class Mosq : MonoBehaviour
             count += 1;
             if (HP == true) 
             {
-                DateManager.Instance.DiePoints += 1; //킬 수 기록
+                DateManager.Instance.DiePoints += 0.1f; //킬 수 기록
+                
                 ParticleSystem instance = Instantiate(Die_Particle, transform.position, Quaternion.identity); 
                 instance.Play();
                 Destroy(instance.gameObject, instance.main.duration); 

@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     Rigidbody2D rigid;
     public ParticleSystem particleObject; //파티클시스템
     public AudioClip clip; //
+    public static bool CoolMode_On =false;
 
     void Start()
     {
@@ -26,17 +27,25 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame    
-    int speed = 10;
+    public static int speed = 10;
     int JumpPower = 10;
     public bool isJumping;
     void Update()
     {
-         if(Input.GetKeyDown(KeyCode.Q) &&  Cool_Gauge.CoolMode == true)
+        if(Cool_Gauge.CoolMode == true)
+        {
+         if(Input.GetKeyDown(KeyCode.Q))
             {
-            speed += 3;
+            CoolAttack_Start();
             particleObject.Play();
             }
-
+        }
+        if(DateManager.CoolTime <= 0)
+        {
+            CoolMode_On = false;
+            CoolAttack_Stop();
+            particleObject.Stop();
+        }
         //점프
         if(isJumping == true)
         {
@@ -112,5 +121,16 @@ public class Player : MonoBehaviour
         {
             gameObject.transform.position = new Vector3(-80, 1.7f, 0);
         }
+    }
+    public static void CoolAttack_Start()
+    {
+            speed += 3;
+            CoolMode_On = true;
+    }
+     public static void CoolAttack_Stop()
+    {   
+        speed -= 3;
+        DateManager.Instance.DiePoints = 0;
+        DateManager.CoolTime = 10;
     }
 }

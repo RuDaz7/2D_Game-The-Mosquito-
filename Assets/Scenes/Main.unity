@@ -528,6 +528,7 @@ GameObject:
   - component: {fileID: 23276574}
   - component: {fileID: 23276576}
   - component: {fileID: 23276575}
+  - component: {fileID: 23276577}
   m_Layer: 5
   m_Name: CoolGaugeFront
   m_TagString: Untagged
@@ -592,6 +593,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23276573}
   m_CullTransparentMesh: 1
+--- !u!114 &23276577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23276573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a5a18f25f11b548b01f3d65b3a7370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &26006814
 GameObject:
   m_ObjectHideFlags: 0
