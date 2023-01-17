@@ -17,6 +17,7 @@ public class Mosq : MonoBehaviour
     GameObject target;
     public AudioClip Die_clip; 
     public float Sc_Timer;
+    public static bool MosqMoveStop = false;
     void Start()
     {   
         anime = GetComponent<Animator>(); //애니메이션 사용을 위해 가져옴
@@ -27,6 +28,15 @@ public class Mosq : MonoBehaviour
     }
     void Update()
     {
+        if(MosqMoveStop == true)
+        {
+            anime.SetBool("Attack", false);
+            this.anime.speed = 0;
+        }
+        if(MosqMoveStop == false)
+        {
+        this.anime.speed = 1;
+        
         Sc_Timer += Time.deltaTime;
         if(Player.HighBlood == true)
         {
@@ -55,6 +65,7 @@ public class Mosq : MonoBehaviour
         {
             this.transform.position = new Vector3(transform.position.x + 
             (direction.x * velocity), transform.position.y + (direction.y * velocity));
+        }
         }
     }
     void OnTriggerEnter2D(Collider2D other) 

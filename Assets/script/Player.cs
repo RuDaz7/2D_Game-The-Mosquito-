@@ -43,6 +43,7 @@ public class Player : MonoBehaviour
         //고혈압모드
         if(Input.GetKeyDown(KeyCode.E))
         {
+            Mosq.MosqMoveStop = true;
              SoundManager.instance.SFXPlay("HighBlood_Sound", Hap);
              Invoke("BloodBoom_Sound",0.9f);
 
@@ -52,6 +53,10 @@ public class Player : MonoBehaviour
             spriteRenderer.material.color = Color.red;   
             MoveStop = true;
             Invoke("MoveOn", 1f);
+            if(MoveStop == true)
+            {
+               anime.SetBool("Walk_On", false);
+            }
         }
 
         //쿨모드
@@ -71,6 +76,7 @@ public class Player : MonoBehaviour
             CoolMode_On = false;
             CoolAttack_Stop();
             particleObject.Stop();
+            spriteRenderer.material.color = Color.white;
         }
         if(MoveStop == false)
         {
@@ -174,5 +180,7 @@ public class Player : MonoBehaviour
     public void MoveOn()
     {
         MoveStop = false;
+        Mosq.MosqMoveStop = false;
+        spriteRenderer.material.color = Color.white;  
     }
 }
