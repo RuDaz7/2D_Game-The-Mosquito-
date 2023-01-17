@@ -43874,6 +43874,10 @@ PrefabInstance:
       propertyPath: SpeedRun_Sound
       value: 
       objectReference: {fileID: 8300000, guid: df021642e2da91e44ad195f438e7244e, type: 3}
+    - target: {fileID: 2210476835805598268, guid: 6b852c0652708b64da36d84f6991569c, type: 3}
+      propertyPath: SpeedRun_On_Sound
+      value: 
+      objectReference: {fileID: 8300000, guid: f67448ae4024f34478579a221f4094a6, type: 3}
     - target: {fileID: 2210476835805598269, guid: 6b852c0652708b64da36d84f6991569c, type: 3}
       propertyPath: m_Enabled
       value: 0

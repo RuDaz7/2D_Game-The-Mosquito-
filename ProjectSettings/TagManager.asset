@@ -10,6 +10,7 @@ TagManager:
   - FxTemporaire
   - Ground
   - Deadline
+  - SuperBullet
   layers:
   - Default
   - TransparentFX

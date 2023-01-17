@@ -92,5 +92,10 @@ public class Mosq : MonoBehaviour
             velocity = 0;
             accelaration = 0;
         }
+         if (other.gameObject.tag.Equals("SuperBullet"))  
+        {
+            Destroy(this.gameObject, 0.3f); 
+            Debug.Log("시원하다!");
+        }
     }
 }

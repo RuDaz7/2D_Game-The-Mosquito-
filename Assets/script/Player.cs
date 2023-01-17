@@ -14,14 +14,16 @@ public class Player : MonoBehaviour
     Animator anime;
     Rigidbody2D rigid;
     public ParticleSystem particleObject; //파티클시스템
-    public AudioClip Shoot; //
+    public AudioClip Shoot; 
     public AudioClip Hap;
     public AudioClip Blood_Boom;
-     public AudioClip SpeedRun_Sound;
+    public AudioClip SpeedRun_Sound;
+    public AudioClip SpeedRun_On_Sound;
     public static bool CoolMode_On = false;
     public static bool HighBlood;
     public ParticleSystem HighBl_Fire;
     public ParticleSystem HighBl_Boom;
+    public bool MoveStop = false;
 
     void Start()
     {
@@ -47,6 +49,9 @@ public class Player : MonoBehaviour
             ParticleSystem instance = Instantiate(HighBl_Fire, transform.position, Quaternion.identity);
             instance.Play();
             Destroy(instance.gameObject, instance.main.duration);
+            spriteRenderer.material.color = Color.red;   
+            MoveStop = true;
+            Invoke("MoveOn", 1f);
         }
 
         //쿨모드
@@ -57,6 +62,8 @@ public class Player : MonoBehaviour
             CoolAttack_Start();
             particleObject.Play();
             SoundManager.instance.SFXPlay("CoolSound", SpeedRun_Sound);
+            spriteRenderer.material.color = Color.cyan;
+            SoundManager.instance.SFXPlay("CoolSound", SpeedRun_On_Sound);
             }
         }
         if(DateManager.CoolTime <= 0)
@@ -65,6 +72,8 @@ public class Player : MonoBehaviour
             CoolAttack_Stop();
             particleObject.Stop();
         }
+        if(MoveStop == false)
+        {
         //점프
         if(isJumping == true)
         {
@@ -114,6 +123,7 @@ public class Player : MonoBehaviour
             SoundManager.instance.SFXPlay("Shoot", Shoot);
         }
     }
+    }
     void OnCollisionEnter2D(Collision2D other) 
     {
            if (other.gameObject.name.Equals("GROUND"))
@@ -160,5 +170,9 @@ public class Player : MonoBehaviour
          instance.Play();
          Destroy(instance.gameObject, instance.main.duration);
          HighBlood = true;
+    }
+    public void MoveOn()
+    {
+        MoveStop = false;
     }
 }
