@@ -41,7 +41,7 @@ public class Mosq : MonoBehaviour
         if(Player.HighBlood_On == true)
         {
             Time.timeScale = 0.2f;
-            Invoke("MosqSlowStop", 5.0f);
+            Invoke("MosqSlowStop", 3.0f);
         }
         else Time.timeScale = 1f;
 
