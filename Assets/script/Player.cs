@@ -50,6 +50,7 @@ public class Player : MonoBehaviour
              SoundManager.instance.SFXPlay("HighBlood_Sound", Hap);
              Invoke("BloodBoom_Sound",0.9f);
              CameraController.cameraSpeed = 25.0f;
+             this.anime.speed = 1.5f;
 
             ParticleSystem instance = Instantiate(HighBl_Fire, transform.position, Quaternion.identity);
             instance.Play();
