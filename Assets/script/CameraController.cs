@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CameraController : MonoBehaviour
 {
-    public float cameraSpeed = 5.0f;
+    public static float cameraSpeed = 5.0f;
 
     public GameObject player; //이런 이름을 찾는다는게 아니고 필드변수임 Player에 누굴 넣을건지 퍼블릭으로 칸을 생성해주는거임 첫자 대문자는 무시
 //gameObject <= 얘가 접근임 찾는거

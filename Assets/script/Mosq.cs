@@ -38,9 +38,10 @@ public class Mosq : MonoBehaviour
         this.anime.speed = 1;
         
         Sc_Timer += Time.deltaTime;
-        if(Player.HighBlood == true)
+        if(Player.HighBlood_On == true)
         {
-            Time.timeScale = 0.6f;
+            Time.timeScale = 0.2f;
+            Invoke("MosqSlowStop", 5.0f);
         }
         else Time.timeScale = 1f;
 
@@ -108,5 +109,10 @@ public class Mosq : MonoBehaviour
             Destroy(this.gameObject, 0.3f); 
             Debug.Log("시원하다!");
         }
+    }
+    public void MosqSlowStop()
+    {
+        Player.HighBlood_On = false;
+        this.anime.speed = 0.5f;
     }
 }

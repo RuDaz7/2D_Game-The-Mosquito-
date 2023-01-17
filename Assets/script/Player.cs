@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
     public AudioClip SpeedRun_On_Sound;
     public static bool CoolMode_On = false;
     public static bool HighBlood;
+     public static bool HighBlood_On;
     public ParticleSystem HighBl_Fire;
     public ParticleSystem HighBl_Boom;
     public bool MoveStop = false;
@@ -36,16 +37,19 @@ public class Player : MonoBehaviour
 
     // Update is called once per frame    
     public static int speed = 10;
-    int JumpPower = 10;
+    public static int JumpPower = 10; 
     public bool isJumping;
     void Update()
     {
+        if(HighBlood == true)
+        {
         //고혈압모드
         if(Input.GetKeyDown(KeyCode.E))
         {
-            Mosq.MosqMoveStop = true;
+             Mosq.MosqMoveStop = true;
              SoundManager.instance.SFXPlay("HighBlood_Sound", Hap);
              Invoke("BloodBoom_Sound",0.9f);
+             CameraController.cameraSpeed = 25.0f;
 
             ParticleSystem instance = Instantiate(HighBl_Fire, transform.position, Quaternion.identity);
             instance.Play();
@@ -57,6 +61,7 @@ public class Player : MonoBehaviour
             {
                anime.SetBool("Walk_On", false);
             }
+        }
         }
 
         //쿨모드
@@ -83,9 +88,11 @@ public class Player : MonoBehaviour
         //점프
         if(isJumping == true)
         {
+          //기존꺼
         if(Input.GetKeyDown(KeyCode.W))
         {
             rigid.AddForce(Vector2.up * JumpPower, ForceMode2D.Impulse);
+            
             isJumping = false;
             anime.SetBool("Jump_On", true);
         }
@@ -132,7 +139,7 @@ public class Player : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D other) 
     {
-           if (other.gameObject.name.Equals("GROUND"))
+        if (other.gameObject.name.Equals("GROUND"))
         {
             isJumping = true;
              anime.SetBool("Jump_On", false);
@@ -175,7 +182,7 @@ public class Player : MonoBehaviour
          ParticleSystem instance = Instantiate(HighBl_Boom, transform.position, Quaternion.identity);
          instance.Play();
          Destroy(instance.gameObject, instance.main.duration);
-         HighBlood = true;
+         HighBlood_On = true;
     }
     public void MoveOn()
     {
