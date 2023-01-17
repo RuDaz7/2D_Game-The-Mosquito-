@@ -8,16 +8,15 @@ public class Mosq : MonoBehaviour
     public ParticleSystem Die_Particle; //모기 사망 임팩트
     bool HP = false; //사망 초기값은 펄스
     public float count; //맞은 횟수
-    Vector3 position;
-    public Vector3 direction;
-    public float velocity;
-    public float accelaration;
+    Vector3 position; //위치값 받을 벡터 변수
+    public Vector3 direction; //방향 변수
+    public float velocity; //속도 변수
+    public float accelaration; 
     Animator anime;
     SpriteRenderer spriteRenderer;
     GameObject target;
     public AudioClip Die_clip; 
-    public float Sc_Timer;
-    public static bool MosqMoveStop = false;
+    public static bool MosqMoveStop = false; //모기 움직임 봉쇄
     void Start()
     {   
         anime = GetComponent<Animator>(); //애니메이션 사용을 위해 가져옴
@@ -33,18 +32,18 @@ public class Mosq : MonoBehaviour
             anime.SetBool("Attack", false);
             this.anime.speed = 0;
         }
-        if(MosqMoveStop == false)
-        {
-        this.anime.speed = 1;
-        
-        Sc_Timer += Time.deltaTime;
+        else this.anime.speed = 1;
+
         if(Player.HighBlood_On == true)
         {
-            Time.timeScale = 0.2f;
-            Invoke("MosqSlowStop", 3.0f);
+            Time.timeScale = 0.3f;
+            this.anime.speed = 0.3f;
+            Invoke("MosqSlowStop", 2.0f);
         }
         else Time.timeScale = 1f;
 
+        if(MosqMoveStop == false)
+        {
         target = GameObject.Find("Player");
         
         if(target.transform.position.x > this.transform.position.x)
@@ -113,6 +112,5 @@ public class Mosq : MonoBehaviour
     public void MosqSlowStop()
     {
         Player.HighBlood_On = false;
-        this.anime.speed = 0.5f;
     }
 }

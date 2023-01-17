@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MaxTime += Time.deltaTime;
+        MaxTime += Time.unscaledDeltaTime;
         text_Timer.text = Mathf.Round(MaxTime) + "초 버팀";
     }
 }

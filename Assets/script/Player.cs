@@ -20,11 +20,11 @@ public class Player : MonoBehaviour
     public AudioClip SpeedRun_Sound;
     public AudioClip SpeedRun_On_Sound;
     public static bool CoolMode_On = false;
-    public static bool HighBlood;
+    public static bool Ican_HighBlood; //고혈압 활상 상태 여부
      public static bool HighBlood_On;
     public ParticleSystem HighBl_Fire;
     public ParticleSystem HighBl_Boom;
-    public bool MoveStop = false;
+    public bool Player_MoveStop = false;
 
     void Start()
     {
@@ -33,36 +33,47 @@ public class Player : MonoBehaviour
         anime = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody2D>();
         particleObject.Stop();
+        JumpPower = 500.0f * Time.unscaledDeltaTime;
     }
 
     // Update is called once per frame    
     public static int speed = 10;
-    public static int JumpPower = 10; 
+    public float JumpPower; 
     public bool isJumping;
     void Update()
     {
-        if(HighBlood == true)
+        if(Ican_HighBlood == true) //고혈압 모드 사용 가능 상태일 때
         {
         //고혈압모드
-        if(Input.GetKeyDown(KeyCode.E))
+        if(Input.GetKeyDown(KeyCode.E)) //키를 누르면
         {
-             Mosq.MosqMoveStop = true;
+             Mosq.MosqMoveStop = true; //모기 움직임 봉쇄
              SoundManager.instance.SFXPlay("HighBlood_Sound", Hap);
              Invoke("BloodBoom_Sound",0.9f);
              CameraController.cameraSpeed = 25.0f;
-             this.anime.speed = 1.5f;
 
             ParticleSystem instance = Instantiate(HighBl_Fire, transform.position, Quaternion.identity);
             instance.Play();
             Destroy(instance.gameObject, instance.main.duration);
-            spriteRenderer.material.color = Color.red;   
-            MoveStop = true;
+            Player_MoveStop = true;
+            Mosq.MosqMoveStop = true;
             Invoke("MoveOn", 1f);
-            if(MoveStop == true)
+            if(Player_MoveStop == true)
             {
                anime.SetBool("Walk_On", false);
             }
         }
+         if(HighBlood_On == true) //고혈압 상태가 맞다면
+            {
+            spriteRenderer.material.color = Color.red; //색깔 변하고 
+            this.anime.speed = 10.0f; //애니메이션 빨라짐
+            }
+            else this.anime.speed = 1.0f;
+
+            if(HighBlood_On == false)
+            {
+            spriteRenderer.material.color = Color.white; 
+            }
         }
 
         //쿨모드
@@ -84,7 +95,7 @@ public class Player : MonoBehaviour
             particleObject.Stop();
             spriteRenderer.material.color = Color.white;
         }
-        if(MoveStop == false)
+        if(Player_MoveStop == false)
         {
         //점프
         if(isJumping == true)
@@ -138,6 +149,7 @@ public class Player : MonoBehaviour
         }
     }
     }
+
     void OnCollisionEnter2D(Collision2D other) 
     {
         if (other.gameObject.name.Equals("GROUND"))
@@ -187,8 +199,7 @@ public class Player : MonoBehaviour
     }
     public void MoveOn()
     {
-        MoveStop = false;
-        Mosq.MosqMoveStop = false;
-        spriteRenderer.material.color = Color.white;  
+        Player_MoveStop = false;
+        Mosq.MosqMoveStop = false; 
     }
 }
