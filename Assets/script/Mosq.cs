@@ -31,6 +31,8 @@ public class Mosq : MonoBehaviour
         {
             anime.SetBool("Attack", false);
             this.anime.speed = 0;
+            velocity = 0;
+            accelaration = 0;
         }
         else this.anime.speed = 1;
 
@@ -38,7 +40,7 @@ public class Mosq : MonoBehaviour
         {
             Time.timeScale = 0.3f;
             this.anime.speed = 0.3f;
-            Invoke("MosqSlowStop", 2.0f);
+            Invoke("MosqSlowStop", 2.5f);
         }
         else Time.timeScale = 1f;
 
