@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HighBlood_Gauge : MonoBehaviour
 {
-  Image H_BloodGauge; //UI 이미지
+  public static Image H_BloodGauge; //UI 이미지
   public static float HTimer; //고혈압 타이머
 
    void Start()

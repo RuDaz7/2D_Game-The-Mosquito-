@@ -18,6 +18,9 @@ public class ScenesManager : MonoBehaviour
         SceneManager.LoadScene("TitleScene");
         DateManager.Instance.Die();
         PlayerHP.Player_HP = 100;
+        HighBlood_Gauge.H_BloodGauge.fillAmount = 0;
+        Player.CoolMode_On = false;
+        Cool_Gauge.CoolGaugeBar.fillAmount = 0;
     }
        public void Game_Lost()
     {

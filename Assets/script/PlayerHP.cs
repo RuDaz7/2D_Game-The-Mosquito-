@@ -6,7 +6,7 @@ using UnityEngine.UI; //
 public class PlayerHP : MonoBehaviour
 {
     Image PlayerBackHP;//
-    float MaxHP = 1000000f;//
+    float MaxHP = 500f;//
     public static float Player_HP;//
     // Start is called before the first frame update
     void Start()

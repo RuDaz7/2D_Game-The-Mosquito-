@@ -6,8 +6,6 @@ public class Mosq : MonoBehaviour
 {
     public static bool Boss_HP_Zero = false;
     public ParticleSystem Die_Particle; //모기 사망 임팩트
-    bool HP = false; //사망 초기값은 펄스
-    public float count; //맞은 횟수
     Vector3 position; //위치값 받을 벡터 변수
     public Vector3 direction; //방향 변수
     public float velocity; //속도 변수
@@ -17,12 +15,12 @@ public class Mosq : MonoBehaviour
     GameObject target;
     public AudioClip Die_clip; 
     public static bool MosqMoveStop = false; //모기 움직임 봉쇄
+
     void Start()
     {   
         anime = GetComponent<Animator>(); //애니메이션 사용을 위해 가져옴
         spriteRenderer = GetComponent<SpriteRenderer>(); //반향 전향을 위해 가져옴
         position = transform.position;
-        count = 1; 
         GetComponent<AudioSource>().Play();
     }
     void Update()
@@ -72,16 +70,13 @@ public class Mosq : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other) 
     {
-        if (count == 5) 
-        {
-            HP = true; 
-        }
 
         if (other.gameObject.tag.Equals("bullet"))  
         {
             anime.SetTrigger("Hits");
-            count += 1;
-            if (HP == true) 
+            MosqHP.Mosq_HP -= 10f;
+
+            if (MosqHP.Mosq_HP == 0) 
             {
                 DateManager.Instance.DiePoints += 0.1f; //킬 수 기록
                 

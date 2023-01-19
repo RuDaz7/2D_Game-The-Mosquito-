@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 
@@ -25,6 +26,8 @@ public class Player : MonoBehaviour
     public ParticleSystem HighBl_Fire;
     public ParticleSystem HighBl_Boom;
     public bool Player_MoveStop = false;
+    public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
+    public Image Gauge;
 
     void Start()
     {
@@ -67,12 +70,14 @@ public class Player : MonoBehaviour
             {
             spriteRenderer.material.color = Color.red; //색깔 변하고 
             this.anime.speed = 10.0f; //애니메이션 빨라짐
+            Gauge.color = flashColour;
             }
-            else this.anime.speed = 1.0f;
 
             if(HighBlood_On == false)
             {
             spriteRenderer.material.color = Color.white; 
+            this.anime.speed = 1.0f;
+            Gauge.color = Color.Lerp(Gauge.color, Color.clear, 5 * Time.unscaledDeltaTime);
             }
         }
 

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Cool_Gauge : MonoBehaviour
 {
-    Image CoolGaugeBar;
+   public static Image CoolGaugeBar;
     public static bool CoolMode;
 
     void Start()

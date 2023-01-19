@@ -167,11 +167,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Die_Particle: {fileID: 19800014, guid: 5332791ebce075d4a9e56f4581e7fb47, type: 3}
-  count: 0
   direction: {x: 0, y: 0, z: 0}
   velocity: 0
   accelaration: 0
   Die_clip: {fileID: 8300000, guid: 9e1d2a4123184704ca6ae15d586b0a4e, type: 3}
+  prfMosHP: {fileID: 1148443465528916219, guid: 11b13258798654e46b5214603ed4d1eb, type: 3}
+  canvas: {fileID: 8041224546735310547, guid: d34c210ed3a3ed14f907f360652d6b1b, type: 3}
+  height: 1.5
 --- !u!58 &4502157444854998765
 CircleCollider2D:
   m_ObjectHideFlags: 0
