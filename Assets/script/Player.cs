@@ -66,18 +66,12 @@ public class Player : MonoBehaviour
                anime.SetBool("Walk_On", false);
             }
         }
-         if(HighBlood_On == true) //고혈압 상태가 맞다면
-            {
-            spriteRenderer.material.color = Color.red; //색깔 변하고 
-            this.anime.speed = 10.0f; //애니메이션 빨라짐
-            Gauge.color = flashColour;
-            }
 
             if(HighBlood_On == false)
             {
-            spriteRenderer.material.color = Color.white; 
             this.anime.speed = 1.0f;
             Gauge.color = Color.Lerp(Gauge.color, Color.clear, 5 * Time.unscaledDeltaTime);
+            spriteRenderer.material.color = Color.white;
             }
         }
 
@@ -89,10 +83,11 @@ public class Player : MonoBehaviour
             CoolAttack_Start();
             particleObject.Play();
             SoundManager.instance.SFXPlay("CoolSound", SpeedRun_Sound);
-            spriteRenderer.material.color = Color.cyan;
             SoundManager.instance.SFXPlay("CoolSound", SpeedRun_On_Sound);
+            //spriteRenderer.material.color = Color.cyan;
             }
         }
+
         if(DateManager.CoolTime <= 0)
         {
             CoolMode_On = false;
@@ -201,6 +196,10 @@ public class Player : MonoBehaviour
          instance.Play();
          Destroy(instance.gameObject, instance.main.duration);
          HighBlood_On = true;
+
+            spriteRenderer.material.color = Color.red; //색깔 변하고 
+            this.anime.speed = 10.0f; //애니메이션 빨라짐
+            Gauge.color = flashColour;
     }
     public void MoveOn()
     {

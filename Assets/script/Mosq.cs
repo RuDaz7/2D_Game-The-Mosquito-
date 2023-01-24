@@ -14,6 +14,7 @@ public class Mosq : MonoBehaviour
     SpriteRenderer spriteRenderer;
     GameObject target;
     public AudioClip Die_clip; 
+    public float MosqTempHP = 30f;
     public static bool MosqMoveStop = false; //모기 움직임 봉쇄
 
     void Start()
@@ -74,9 +75,10 @@ public class Mosq : MonoBehaviour
         if (other.gameObject.tag.Equals("bullet"))  
         {
             anime.SetTrigger("Hits");
-            MosqHP.Mosq_HP -= 10f;
-
-            if (MosqHP.Mosq_HP == 0) 
+            //MosqHP.Mosq_HP -= 10f;
+            MosqTempHP -= 10f;
+            //if (MosqHP.Mosq_HP == 0) 
+            if (MosqTempHP == 0) 
             {
                 DateManager.Instance.DiePoints += 0.1f; //킬 수 기록
                 

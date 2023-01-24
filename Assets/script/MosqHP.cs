@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class MosqHP : MonoBehaviour
 {
     Image MosqBackHP;//
-    float MosqMaxHP = 50f;//
+    float MosqMaxHP = 30f;//
     public static float Mosq_HP;//
     
     void Start()

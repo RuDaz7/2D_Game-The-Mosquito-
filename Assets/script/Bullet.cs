@@ -12,10 +12,10 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         transform.position += direction * speed * Time.unscaledDeltaTime; //총알의 위치는 = xyz공간에 * 속도 * 시간을 더한값 
-        if(Player.HighBlood_On == true && Player.CoolMode_On == true)
-        {
-            speed += 10;
-        }
+        // if(Player.HighBlood_On == true && Player.CoolMode_On == true)
+        // {
+        //     speed += 10;
+        // }
     }
     void OnBecameInvisible() //카메라 시야 밖으로 벗어나면> 조건 함수
     {
