@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     public AudioClip Blood_Boom;
     public AudioClip SpeedRun_Sound;
     public AudioClip SpeedRun_On_Sound;
+    public AudioClip GetCoin;
     public static bool CoolMode_On = false;
     public static bool Ican_HighBlood; //고혈압 활상 상태 여부
      public static bool HighBlood_On;
@@ -84,7 +85,6 @@ public class Player : MonoBehaviour
             particleObject.Play();
             SoundManager.instance.SFXPlay("CoolSound", SpeedRun_Sound);
             SoundManager.instance.SFXPlay("CoolSound", SpeedRun_On_Sound);
-            //spriteRenderer.material.color = Color.cyan;
             }
         }
 
@@ -93,7 +93,6 @@ public class Player : MonoBehaviour
             CoolMode_On = false;
             CoolAttack_Stop();
             particleObject.Stop();
-            spriteRenderer.material.color = Color.white;
         }
         if(Player_MoveStop == false)
         {
@@ -175,6 +174,10 @@ public class Player : MonoBehaviour
         if (other.gameObject.tag.Equals("Deadline"))
         {
             gameObject.transform.position = new Vector3(-80, 1.7f, 0);
+        }
+        if (other.gameObject.tag.Equals("MosqCoin"))
+        {
+            SoundManager.instance.SFXPlay("Coin", GetCoin);
         }
     }
     public static void CoolAttack_Start()

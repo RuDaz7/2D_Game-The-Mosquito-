@@ -24,6 +24,8 @@ public class DateManager : MonoBehaviour
 
     void Update() 
     {
+        Debug.Log("획득한 코인 갯수" + MosqCoin.MosqCoins);
+
         TimeOut += Time.deltaTime;
         if(TimeOut > 10)
         {

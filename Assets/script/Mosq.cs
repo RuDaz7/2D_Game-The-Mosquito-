@@ -16,6 +16,7 @@ public class Mosq : MonoBehaviour
     public AudioClip Die_clip; 
     public float MosqTempHP = 30f;
     public static bool MosqMoveStop = false; //모기 움직임 봉쇄
+    public GameObject MosqCoinPre; //가지고올 프리팹
 
     void Start()
     {   
@@ -81,7 +82,6 @@ public class Mosq : MonoBehaviour
             if (MosqTempHP == 0) 
             {
                 DateManager.Instance.DiePoints += 0.1f; //킬 수 기록
-                
                 ParticleSystem instance = Instantiate(Die_Particle, transform.position, Quaternion.identity); 
                 instance.Play();
                 Destroy(instance.gameObject, instance.main.duration); 
@@ -92,6 +92,16 @@ public class Mosq : MonoBehaviour
                 //낙하
                 BoxCollider2D coll = gameObject.GetComponent<BoxCollider2D>();
                 coll.enabled = false;
+
+                 int ran = Random.Range(0, 10);
+                if(ran < 5)
+                {
+                    Debug.Log("아이템 드랍 안 됨");
+                }
+                else if(ran > 5)
+                {
+                    GameObject MosqCoin = Instantiate(MosqCoinPre, transform.position, Quaternion.identity);
+                }
             }
             //SoundManager.instance.SFXPlay("BossCritical", Die_clip);
         }

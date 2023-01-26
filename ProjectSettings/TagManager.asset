@@ -11,6 +11,7 @@ TagManager:
   - Ground
   - Deadline
   - SuperBullet
+  - MosqCoin
   layers:
   - Default
   - TransparentFX
