@@ -29,7 +29,7 @@ public class Mosq : MonoBehaviour
     }
     void Update()
     {
-        if(MosqMoveStop == true)
+        if(MosqMoveStop)
         {
             anime.SetBool("Attack", false);
             this.anime.speed = 0;
@@ -38,7 +38,7 @@ public class Mosq : MonoBehaviour
         }
         else this.anime.speed = 1;
 
-        if(Player.HighBlood_On == true)
+        if(Player.HighBlood_On)
         {
             Time.timeScale = 0.3f;
             this.anime.speed = 0.3f;
@@ -46,7 +46,7 @@ public class Mosq : MonoBehaviour
         }
         else Time.timeScale = 1f;
 
-        if(MosqMoveStop == false)
+        if(!MosqMoveStop)
         {
         target = GameObject.Find("Player");
         
@@ -81,13 +81,15 @@ public class Mosq : MonoBehaviour
             //MosqHP.Mosq_HP -= 10f;
             MosqTempHP -= 10f;
             //if (MosqHP.Mosq_HP == 0) 
-            if (MosqTempHP == 0) 
+            if (MosqTempHP <= 0) 
             {
                 DateManager.Instance.DiePoints += 0.1f; //킬 수 기록
+
                 ParticleSystem instance = Instantiate(Die_Particle, transform.position, Quaternion.identity); 
                 instance.Play();
                 Destroy(instance.gameObject, instance.main.duration); 
-                Destroy(this.gameObject, 0.3f); 
+                //모기 죽음
+                Destroy(this.gameObject, 0.2f); 
                 CountDie += 1;
 
                 //y축 반전
@@ -106,7 +108,6 @@ public class Mosq : MonoBehaviour
                     GameObject MosqCoin = Instantiate(MosqCoinPre, transform.position, Quaternion.identity);
                 }
             }
-            //SoundManager.instance.SFXPlay("BossCritical", Die_clip);
         }
 
         if(other.gameObject.tag.Equals("Player"))
@@ -120,11 +121,12 @@ public class Mosq : MonoBehaviour
         {
             if (other.gameObject.tag.Equals("bullet"))  
         {
-            Destroy(this.gameObject); 
+            MosqTempHP -= 50f;
+            Destroy(this.gameObject);
+
             ParticleSystem instance = Instantiate(SuperShotDie, transform.position, Quaternion.identity); 
             instance.Play();
             Destroy(instance.gameObject, instance.main.duration); 
-            Debug.Log("시원하다!");
             SoundManager.instance.SFXPlay("BossCritical", Die_clip);
         }
         }

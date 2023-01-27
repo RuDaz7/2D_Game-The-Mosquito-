@@ -90,7 +90,7 @@ public class Player : MonoBehaviour
             MosqCoin.MosqCoins = 0;
             }
         }
-        if(MosqCoin.MosqCoins > 2)
+        if(MosqCoin.MosqCoins >= 2)
         {
            if (Input.GetMouseButtonDown(1))
         {
@@ -128,10 +128,12 @@ public class Player : MonoBehaviour
             ParticleSystem instance = Instantiate(HighBl_Fire, transform.position, Quaternion.identity);
             instance.Play();
             Destroy(instance.gameObject, instance.main.duration);
+
             Player_MoveStop = true;
             Mosq.MosqMoveStop = true;
+            //
             Invoke("MoveOn", 1f);
-            if(Player_MoveStop == true)
+            if(Player_MoveStop)
             {
                anime.SetBool("Walk_On", false);
             }
@@ -268,11 +270,14 @@ public class Player : MonoBehaviour
          ParticleSystem instance = Instantiate(HighBl_Boom, transform.position, Quaternion.identity);
          instance.Play();
          Destroy(instance.gameObject, instance.main.duration);
+         
          HighBlood_On = true;
 
             spriteRenderer.material.color = Color.red; //색깔 변하고 
             this.anime.speed = 10.0f; //애니메이션 빨라짐
             Gauge.color = flashColour;
+
+            PlayerHP.Player_HP += 100f;
     }
     public void MoveOn()
     {
