@@ -7,7 +7,12 @@ public class Bullet : MonoBehaviour
     public ParticleSystem explosionParticle; //사용할 파티클 변수 이름 지정, 퍼블릭으로 인스펙터창 표시직접 사입
     public Vector3 direction; //xyz를 가지고 있는 백터3를 direction이름으로 선언
     public float speed;
+    SpriteRenderer spriteRenderer;
     
+    void Start() 
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -16,6 +21,10 @@ public class Bullet : MonoBehaviour
         // {
         //     speed += 10;
         // }
+        if(Player.Super_Shot == true)
+        {
+            spriteRenderer.material.color = Color.red;
+        }
     }
     void OnBecameInvisible() //카메라 시야 밖으로 벗어나면> 조건 함수
     {

@@ -17,6 +17,8 @@ public class Mosq : MonoBehaviour
     public float MosqTempHP = 30f;
     public static bool MosqMoveStop = false; //모기 움직임 봉쇄
     public GameObject MosqCoinPre; //가지고올 프리팹
+    public ParticleSystem SuperShotDie;
+    public static int CountDie;
 
     void Start()
     {   
@@ -86,6 +88,7 @@ public class Mosq : MonoBehaviour
                 instance.Play();
                 Destroy(instance.gameObject, instance.main.duration); 
                 Destroy(this.gameObject, 0.3f); 
+                CountDie += 1;
 
                 //y축 반전
                 spriteRenderer.flipY = true;
@@ -112,10 +115,18 @@ public class Mosq : MonoBehaviour
             velocity = 0;
             accelaration = 0;
         }
-         if (other.gameObject.tag.Equals("SuperBullet"))  
+
+         if (Player.Super_Shot == true)  
         {
-            Destroy(this.gameObject, 0.3f); 
+            if (other.gameObject.tag.Equals("bullet"))  
+        {
+            Destroy(this.gameObject); 
+            ParticleSystem instance = Instantiate(SuperShotDie, transform.position, Quaternion.identity); 
+            instance.Play();
+            Destroy(instance.gameObject, instance.main.duration); 
             Debug.Log("시원하다!");
+            SoundManager.instance.SFXPlay("BossCritical", Die_clip);
+        }
         }
     }
     public void MosqSlowStop()

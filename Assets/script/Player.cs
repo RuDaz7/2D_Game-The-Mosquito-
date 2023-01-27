@@ -21,6 +21,12 @@ public class Player : MonoBehaviour
     public AudioClip SpeedRun_Sound;
     public AudioClip SpeedRun_On_Sound;
     public AudioClip GetCoin;
+    public AudioClip Skill_1SD;
+    public AudioClip Skil2_1SD;
+    public AudioClip Skil3_1SD;
+    public ParticleSystem SprayPC;
+     public ParticleSystem HomeMatPC;
+     public ParticleSystem RepellentPC;
     public static bool CoolMode_On = false;
     public static bool Ican_HighBlood; //고혈압 활상 상태 여부
      public static bool HighBlood_On;
@@ -29,6 +35,9 @@ public class Player : MonoBehaviour
     public bool Player_MoveStop = false;
     public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
     public Image Gauge;
+    public AudioClip SuperShot;
+    public static bool Super_Shot;
+    public AudioClip loadBullet;
 
     void Start()
     {
@@ -46,6 +55,66 @@ public class Player : MonoBehaviour
     public bool isJumping;
     void Update()
     {
+        if(MosqCoin.MosqCoins >= 10)
+        {
+            if(Input.GetKeyDown(KeyCode.Alpha1))
+            {
+            SoundManager.instance.SFXPlay("Spray", Skill_1SD);
+
+            ParticleSystem instance = Instantiate(SprayPC, transform.position, Quaternion.identity);
+            instance.Play();
+            Destroy(instance.gameObject, instance.main.duration);
+
+            MosqCoin.MosqCoins = 0;
+            }
+
+            if(Input.GetKeyDown(KeyCode.Alpha2))
+            {
+            SoundManager.instance.SFXPlay("HomeMat", Skil2_1SD);
+
+            ParticleSystem instance = Instantiate(HomeMatPC, transform.position, Quaternion.identity);
+            instance.Play();
+            Destroy(instance.gameObject, instance.main.duration);
+
+            MosqCoin.MosqCoins = 0;
+            }
+
+            if(Input.GetKeyDown(KeyCode.Alpha3))
+            {
+            SoundManager.instance.SFXPlay("Repellent", Skil3_1SD);
+
+            ParticleSystem instance = Instantiate(RepellentPC, transform.position, Quaternion.identity);
+            instance.Play();
+            Destroy(instance.gameObject, instance.main.duration);
+
+            MosqCoin.MosqCoins = 0;
+            }
+        }
+        if(MosqCoin.MosqCoins > 2)
+        {
+           if (Input.GetMouseButtonDown(1))
+        {
+            GameObject bulletObj = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+            Vector3 direction = (aim.position - transform.position).normalized;
+            //Bullet 클래스 bullet을 선언
+            Bullet bullet = bulletObj.GetComponent<Bullet>();
+
+            bullet.direction = direction;
+            bullet.speed = 35;
+            SoundManager.instance.SFXPlay("SuperShoot", SuperShot);
+            MosqCoin.MosqCoins -= 2;
+
+            Super_Shot = true;
+        }
+        }
+        if(MosqCoin.MosqCoins <= 1)
+        {
+              if (Input.GetMouseButtonDown(1))
+        {
+            SoundManager.instance.SFXPlay("Load_Bullets", loadBullet);
+        }
+        }
+
         if(Ican_HighBlood == true) //고혈압 모드 사용 가능 상태일 때
         {
         //고혈압모드
@@ -145,6 +214,7 @@ public class Player : MonoBehaviour
             bullet.speed = 20;
             //GetComponent<AudioSource>().Play();
             SoundManager.instance.SFXPlay("Shoot", Shoot);
+            Super_Shot = false;
         }
     }
     }

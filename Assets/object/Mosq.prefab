@@ -173,6 +173,7 @@ MonoBehaviour:
   Die_clip: {fileID: 8300000, guid: 9e1d2a4123184704ca6ae15d586b0a4e, type: 3}
   MosqTempHP: 30
   MosqCoinPre: {fileID: 6137461701963290396, guid: 04c9daf036119e344b4c93e7e7dac8f2, type: 3}
+  SuperShotDie: {fileID: 19800008, guid: 1dbc518224e49f34095aab42fe05751a, type: 3}
 --- !u!58 &4502157444854998765
 CircleCollider2D:
   m_ObjectHideFlags: 0
