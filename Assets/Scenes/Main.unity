@@ -43489,6 +43489,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8041224544976696795, guid: d34c210ed3a3ed14f907f360652d6b1b, type: 3}
+      propertyPath: m_Name
+      value: TimerTXT
+      objectReference: {fileID: 0}
     - target: {fileID: 8041224546735310547, guid: d34c210ed3a3ed14f907f360652d6b1b, type: 3}
       propertyPath: m_Name
       value: Canvas
