@@ -13,11 +13,17 @@
   
 + ## 게임 플레이 영상_2022/12/23_기준
 > ![playGif](https://user-images.githubusercontent.com/90640499/209385366-dc3794c6-3bf2-4c8e-b55f-716e9d2a1526.gif)
++ ## 게임 플레이 영상_2023/01/27_기준
+> ![Game1](https://user-images.githubusercontent.com/90640499/215120169-52d670b0-84ba-4aa4-875e-c36638bd7e37.gif)
+> ![Game2](https://user-images.githubusercontent.com/90640499/215120213-c06e605e-de35-48cb-9214-c1a7adab1fe2.gif)
 ---
 + ## 타이틀_2022/01/05_기준
 ![2D_Game-The-Mosquito-TitleScene-PC_-Mac-_-Linux-Standalone-Unity-2020 3](https://user-images.githubusercontent.com/90640499/210773170-75551f09-ed19-41b2-84bb-25b8ffd850a5.gif)
 + ## 타이틀_2022/01/06_기준
 ![1월6일](https://user-images.githubusercontent.com/90640499/210922616-321e5934-5645-4b38-a781-a6b3b5e49a94.gif)
+
++ ## 타이틀_2023/01/27_기준
+![title](https://user-images.githubusercontent.com/90640499/215113788-f1701330-ed0b-447c-8906-24025411e8c8.gif)
 ---
 + ## 타이틀 및 엔딩씬 초안
 > <img width="50%" src="https://user-images.githubusercontent.com/90640499/209391311-981ea87f-6c64-4dd6-9494-1d10d4fe1075.png"/> **타이틀**
