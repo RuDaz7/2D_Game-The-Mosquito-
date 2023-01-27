@@ -128,6 +128,8 @@ public class Mosq : MonoBehaviour
             instance.Play();
             Destroy(instance.gameObject, instance.main.duration); 
             SoundManager.instance.SFXPlay("BossCritical", Die_clip);
+
+            CountDie += 1;
         }
         }
     }
