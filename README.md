@@ -33,5 +33,5 @@
 > <img width="50%" src="https://user-images.githubusercontent.com/90640499/209391802-d7abfdca-508c-4b01-bb46-c5ce4ad726d0.png"/> **패배**
 --- 
 + ## 게임 방법
-[조작법 ⌨](https://github.com/RuDaz7/2D_Game-The-Mosquito-/issues/7#issue-1525499815)
+[조작법 ⌨](https://github.com/RuDaz7/2D_Game-The-Mosquito-/issues/7#issue-1525499815)  
 [승리 조건💪👊](https://github.com/RuDaz7/2D_Game-The-Mosquito-/issues/9#issue-1560824799)
