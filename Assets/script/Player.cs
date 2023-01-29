@@ -254,12 +254,12 @@ public class Player : MonoBehaviour
     }
     public static void CoolAttack_Start()
     {
-            speed += 3;
+            speed += 10;
             CoolMode_On = true;
     }
      public static void CoolAttack_Stop()
     {   
-        speed -= 3;
+        speed -= 10;
         DateManager.Instance.DiePoints = 0;
         DateManager.CoolTime = 10;
     }
