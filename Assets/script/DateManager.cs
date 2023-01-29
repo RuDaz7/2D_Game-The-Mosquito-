@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class DateManager : MonoBehaviour
 {
-    public int ScorePoints;
     public float DiePoints;
-    public float TimeOut;
     private static DateManager instance = null; //싱글톤을 만들기 위해선 스태틱 + 스크립트 이름 앞에 인스턴스를 붙여줌
     public static float CoolTime = 10f;
     //public쓰면 되지만 보안이 취약해짐으로 private으로 써보자.
+
+
     public static DateManager Instance
     {
         get
@@ -26,16 +26,9 @@ public class DateManager : MonoBehaviour
     {
         Debug.Log("획득한 코인 갯수" + MosqCoin.MosqCoins);
 
-        TimeOut += Time.deltaTime;
-        if(TimeOut > 10)
-        {
-            TimeOut = 0;
-            ScorePoints += 1;
-        }
-
         if(Player.CoolMode_On == true)
         {
-            CoolTime -= Time.deltaTime;
+            CoolTime -= Time.unscaledDeltaTime;
             Debug.Log("남은 지속시간" + CoolTime);
         }
     }

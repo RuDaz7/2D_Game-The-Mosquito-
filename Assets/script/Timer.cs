@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public float MaxTime;
+    public static float MaxTime;
     public Text text_Timer;
 
     // Update is called once per frame

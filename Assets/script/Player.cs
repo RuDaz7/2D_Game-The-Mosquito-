@@ -50,7 +50,7 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame    
-    public static int speed = 10;
+    public static int speed = 8;
     public float JumpPower; 
     public bool isJumping;
     void Update()

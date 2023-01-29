@@ -12,6 +12,7 @@ TagManager:
   - Deadline
   - SuperBullet
   - MosqCoin
+  - Boss
   layers:
   - Default
   - TransparentFX
