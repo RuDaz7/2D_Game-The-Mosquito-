@@ -4,36 +4,43 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
-    public ParticleSystem Die_Particle; //보스 사망 임팩트
+public ParticleSystem Die_Particle; //보스 사망 임팩트
 
-    Animator anime;
-    SpriteRenderer spriteRenderer;
-    public AudioClip Die_clip; 
-    public ParticleSystem SuperShotDie;
-     GameObject target;
+Animator anime;
+SpriteRenderer spriteRenderer;
+public AudioClip DieSound; 
+public ParticleSystem SuperShot;
+GameObject target;
 
-     public bool Boss_On = true;
-
-// public GameObject prfHpBar;
-// public GameObject canvas;
-// RectTransform hpBar;
-// public float height = 1.7f;
+public GameObject prfHpBar;//
+public GameObject canvas;//
+RectTransform hpBar;//
+public float height = 2.0f;//
+public bool BossMove;
+public float AttackTime;
 
     void Start()
     {   
         anime = GetComponent<Animator>(); //애니메이션 사용을 위해 가져옴
         spriteRenderer = GetComponent<SpriteRenderer>(); //반향 전향을 위해 가져옴
         GetComponent<AudioSource>().Play();
-
-        // hpBar = Instantiate(prfHpBar, canvas.transform).GetComponent<RectTransform>();
+        hpBar = Instantiate(prfHpBar, canvas.transform).GetComponent<RectTransform>();//
+        BossMove = true;
     }
     void Update()
     {
-        if(Boss_On)
-        {
-        transform.position += new Vector3(-1 * Time.deltaTime, 0, 0);
+        AttackTime += Time.unscaledDeltaTime;
+        target = GameObject.Find("Player");
 
-         target = GameObject.Find("Player");
+        Vector3 _hpBarPos = Camera.main.WorldToScreenPoint(new Vector3(transform.position.x, transform.position.y + height, 0));
+        hpBar.position = _hpBarPos;//
+
+        if(BossMove)
+        {
+        transform.Translate(Vector3.right * Time.deltaTime);
+        }
+        else
+        transform.Translate(Vector3.right * 0.0f);
         
         if(target.transform.position.x > this.transform.position.x)
         {
@@ -44,14 +51,37 @@ public class Boss : MonoBehaviour
             spriteRenderer.flipX = false;
         }
 
-        float distance1 = Vector3.Distance(target.transform.position, transform.position); 
-
-         if (distance1 < 3.0f)
+         float AttackDistance1 = Vector3.Distance(target.transform.position, transform.position); 
+         float AttackDistance2 = Vector3.Distance(target.transform.position, transform.position); 
+        if(AttackTime < 10)
         {
-            anime.SetBool("WindAT", true);
+         if (AttackDistance1 < 10.0f)
+        {
+         anime.SetBool("WindAT", true);
         }
-        else
-        anime.SetBool("WindAT", false);
+        if(AttackDistance1 > 10.0f )
+        {
+         anime.SetBool("WindAT", false);
+        }
+        }
+
+        Debug.Log("현재 거리"+AttackDistance1);
+
+        if(AttackTime > 10)
+        {
+          if(AttackDistance2 < 5.0f)
+        {
+            anime.SetBool("BiteAT", true);
+        }
+             if(AttackDistance2 > 5.0f)  
+        {
+            anime.SetBool("BiteAT", false);
+        }
+
+        if(AttackTime >= 20)
+        {
+            AttackTime = 0;
+        }
         }
     }
     void OnTriggerEnter2D(Collider2D other) 
@@ -64,37 +94,32 @@ public class Boss : MonoBehaviour
             if (BossHP.Boss_HP <= 0) 
             {
                 anime.SetBool("Die", true);
-
+                BossMove = false;
                 ParticleSystem instance = Instantiate(Die_Particle, transform.position, Quaternion.identity); 
                 instance.Play();
                 Destroy(instance.gameObject, instance.main.duration); 
- 
-                transform.position += new Vector3(0 * Time.deltaTime, 0, 0);
 
                 //낙하
                 BoxCollider2D coll = gameObject.GetComponent<BoxCollider2D>();
                 coll.enabled = false;
+                SoundManager.instance.SFXPlay("BossCritical", DieSound);
             }
         }
-
-        if(other.gameObject.tag.Equals("Player"))
-        {
-            anime.SetTrigger("BiteAT");
-        }
-
          if (Player.Super_Shot == true)  
         {
             if (other.gameObject.tag.Equals("bullet"))  
         {
             BossHP.Boss_HP -= 70f;
-
             anime.SetTrigger("Cri");
-            ParticleSystem instance = Instantiate(SuperShotDie, transform.position, Quaternion.identity); 
+            ParticleSystem instance = Instantiate(SuperShot, transform.position, Quaternion.identity); 
             instance.Play();
             Destroy(instance.gameObject, instance.main.duration); 
-            SoundManager.instance.SFXPlay("BossCritical", Die_clip);
         }
         }
+    }
+     void OnTriggerExit2D(Collider2D other) 
+    {
+        anime.SetBool("Idle", true);
     }
 }
 

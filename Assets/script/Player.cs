@@ -55,6 +55,24 @@ public class Player : MonoBehaviour
     public bool isJumping;
     void Update()
     {
+        //원할한 테스트를 위한 치트키
+        if(Input.GetKey(KeyCode.W) && (Input.GetKey(KeyCode.Space)))
+        {
+            transform.position += new Vector3(0, 0.03f, 0);
+        }
+         if(Input.GetKey(KeyCode.S) && (Input.GetKey(KeyCode.Space)))
+        {
+            transform.position += new Vector3(0, -0.05f, 0);
+        }
+          if(Input.GetKey(KeyCode.A) && (Input.GetKey(KeyCode.Space)))
+        {
+            transform.position += new Vector3(-0.2f, 0, 0);
+        }
+           if(Input.GetKey(KeyCode.D) && (Input.GetKey(KeyCode.Space)))
+        {
+            transform.position += new Vector3(0.2f, 0, 0);
+        }
+
         if(MosqCoin.MosqCoins >= 10)
         {
             if(Input.GetKeyDown(KeyCode.Alpha1))
