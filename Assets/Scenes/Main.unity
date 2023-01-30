@@ -5940,6 +5940,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2210476835805598263, guid: 6b852c0652708b64da36d84f6991569c, type: 3}
   m_PrefabInstance: {fileID: 2210476835510060145}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &312645197 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2210476835805598265, guid: 6b852c0652708b64da36d84f6991569c, type: 3}
+  m_PrefabInstance: {fileID: 2210476835510060145}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &312875703
 GameObject:
   m_ObjectHideFlags: 0
@@ -28985,6 +28990,8 @@ GameObject:
   - component: {fileID: 1337579592}
   - component: {fileID: 1337579593}
   - component: {fileID: 1337579594}
+  - component: {fileID: 1337579588}
+  - component: {fileID: 1337579589}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
@@ -28999,7 +29006,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1337579586}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 71333bdc931c18b4181235627e664402, type: 3}
@@ -29013,7 +29020,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1.82
   MinDistance: 1
-  MaxDistance: 50
+  MaxDistance: 3.8222694
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -29088,6 +29095,53 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!50 &1337579588
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337579586}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!61 &1337579589
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337579586}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.05}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.55, y: 0.52}
+    newSize: {x: 1.5, y: 1.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.2, y: 0.2}
+  m_EdgeRadius: 0
 --- !u!212 &1337579590
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29147,9 +29201,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1337579586}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 28.56, y: 6.03, z: 0}
+  m_LocalPosition: {x: 28.4735, y: 6.1742, z: 0}
   m_LocalScale: {x: 25, y: 25, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1444332070}
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -29185,12 +29240,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Die_Particle: {fileID: 19800006, guid: 28ccd38a41e256a4e8fea96f5a8d039d, type: 3}
-  DieSound: {fileID: 8300000, guid: 71333bdc931c18b4181235627e664402, type: 3}
+  Die: {fileID: 8300000, guid: dae54dc457d85174c81e35e6a444bf6e, type: 3}
+  Hit: {fileID: 8300000, guid: 2b8a4bf28a0628a4ebf5b630e83d9c0e, type: 3}
+  Attack: {fileID: 8300000, guid: 71333bdc931c18b4181235627e664402, type: 3}
+  Cri: {fileID: 8300000, guid: 9e1d2a4123184704ca6ae15d586b0a4e, type: 3}
   SuperShot: {fileID: 19800008, guid: 1dbc518224e49f34095aab42fe05751a, type: 3}
-  Boss_On: 1
+  Target: {fileID: 312645197}
   prfHpBar: {fileID: 2143762108389203973, guid: 94f2bfbb2176a634aba78e91ad9c469f, type: 3}
   canvas: {fileID: 1859836165}
   height: 2
+  BossMove: 0
 --- !u!58 &1337579594
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29206,7 +29265,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.09
 --- !u!1 &1354818344
 GameObject:
   m_ObjectHideFlags: 0
@@ -30524,6 +30583,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1444332069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1444332070}
+  m_Layer: 0
+  m_Name: BossAT
+  m_TagString: BossAT
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1444332070
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444332069}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 0.06973999, y: -0.027368011, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1337579591}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1445474425
 GameObject:
   m_ObjectHideFlags: 0

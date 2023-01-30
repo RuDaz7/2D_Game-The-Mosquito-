@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class BossHP : MonoBehaviour
 {
     Image BossBackHP;//
-    float BossMaxHP = 500f;//
+    float BossMaxHP = 5000f;//
     public static float Boss_HP;//
     
     void Start()

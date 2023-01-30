@@ -13,6 +13,7 @@ TagManager:
   - SuperBullet
   - MosqCoin
   - Boss
+  - BossAT
   layers:
   - Default
   - TransparentFX

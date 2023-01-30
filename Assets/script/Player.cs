@@ -55,6 +55,14 @@ public class Player : MonoBehaviour
     public bool isJumping;
     void Update()
     {
+            if (PlayerHP.Player_HP == 0)
+            {
+                ParticleSystem instance = Instantiate(explosionParticle, transform.position, Quaternion.identity);
+                instance.Play();
+                Destroy(instance.gameObject, instance.main.duration);
+                Destroy(this.gameObject);
+            }
+
         //원할한 테스트를 위한 치트키
         if(Input.GetKey(KeyCode.W) && (Input.GetKey(KeyCode.Space)))
         {
@@ -252,14 +260,6 @@ public class Player : MonoBehaviour
         if (other.gameObject.tag.Equals("enemy"))
         {
             PlayerHP.Player_HP -= 10f;
-
-            if (PlayerHP.Player_HP == 0)
-            {
-                ParticleSystem instance = Instantiate(explosionParticle, transform.position, Quaternion.identity);
-                instance.Play();
-                Destroy(instance.gameObject, instance.main.duration);
-                Destroy(this.gameObject);
-            }
         }
         if (other.gameObject.tag.Equals("Deadline"))
         {
@@ -268,6 +268,14 @@ public class Player : MonoBehaviour
         if (other.gameObject.tag.Equals("MosqCoin"))
         {
             SoundManager.instance.SFXPlay("Coin", GetCoin);
+        }
+        if (other.gameObject.tag.Equals("Boss"))
+        {
+            PlayerHP.Player_HP -= 30f;
+        }
+        if (other.gameObject.tag.Equals("BossAT"))
+        {
+            PlayerHP.Player_HP -= 100f;
         }
     }
     public static void CoolAttack_Start()
