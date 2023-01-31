@@ -15,7 +15,8 @@
 > ![playGif](https://user-images.githubusercontent.com/90640499/209385366-dc3794c6-3bf2-4c8e-b55f-716e9d2a1526.gif)
 + ## 게임 플레이 영상_2023/01/27_기준
 > ![Game1](https://user-images.githubusercontent.com/90640499/215120169-52d670b0-84ba-4aa4-875e-c36638bd7e37.gif)
-> ![Game2](https://user-images.githubusercontent.com/90640499/215120213-c06e605e-de35-48cb-9214-c1a7adab1fe2.gif)
+> ![Game2](https://user-images.githubusercontent.com/90640499/215120213-c06e605e-de35-48cb-9214-c1a7adab1fe2.gif)  
+> [🏴‍☠️보스 업데이트🏴‍☠️](https://github.com/RuDaz7/2D_Game-The-Mosquito-/issues/10#issue-1562837452)
 ---
 + ## 타이틀_2022/01/05_기준
 ![2D_Game-The-Mosquito-TitleScene-PC_-Mac-_-Linux-Standalone-Unity-2020 3](https://user-images.githubusercontent.com/90640499/210773170-75551f09-ed19-41b2-84bb-25b8ffd850a5.gif)
