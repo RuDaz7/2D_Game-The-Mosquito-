@@ -53,6 +53,7 @@ public class Player : MonoBehaviour
     public static int speed = 8;
     public float JumpPower; 
     public bool isJumping;
+    public DateManager SkillUI;
     void Update()
     {
             if (PlayerHP.Player_HP == 0)
@@ -70,7 +71,7 @@ public class Player : MonoBehaviour
         }
          if(Input.GetKey(KeyCode.S) && (Input.GetKey(KeyCode.Space)))
         {
-            transform.position += new Vector3(0, -0.05f, 0);
+            transform.position += new Vector3(0, -0.3f, 0);
         }
           if(Input.GetKey(KeyCode.A) && (Input.GetKey(KeyCode.Space)))
         {
@@ -146,6 +147,8 @@ public class Player : MonoBehaviour
         //고혈압모드
         if(Input.GetKeyDown(KeyCode.E)) //키를 누르면
         {
+             SkillUI.Action();
+             
              Mosq.MosqMoveStop = true; //모기 움직임 봉쇄
              SoundManager.instance.SFXPlay("HighBlood_Sound", Hap);
              Invoke("BloodBoom_Sound",0.9f);
@@ -309,5 +312,6 @@ public class Player : MonoBehaviour
     {
         Player_MoveStop = false;
         Mosq.MosqMoveStop = false; 
+        SkillUI.Skill1.SetActive(false);
     }
 }

@@ -20,6 +20,7 @@ public class Boss : MonoBehaviour
     RectTransform hpBar;//
     public float height = 2.0f;//
     public bool BossMove;
+    public bool TagetOn;
 
     void Start()
     {
@@ -54,32 +55,39 @@ public class Boss : MonoBehaviour
         Debug.Log("현재 거리 " + AttackDistance);
 
         //거리가 10다 가까우면 
-        if (AttackDistance < 10 && AttackDistance > 6)
+        if (AttackDistance < 15 && AttackDistance > 10)
         {
             anime.SetBool("WindAT", true);
             transform.position += new Vector3(0, 3f * Time.deltaTime, 0);
             BossMove = false;
             Invoke("BossAT", 1f);
-            Invoke("ATSound", 0.3f);
+            TagetOn = true;
         }
         else
         {
             anime.SetBool("WindAT", false);
             anime.SetBool("Idle", true);
             BossMove = true;
+            TagetOn = false;
         }
         if (AttackDistance < 5 && AttackDistance > 2)
         {
             anime.SetBool("BiteAT", true);
             transform.position = Vector3.MoveTowards(transform.position, Target.position, 5 * Time.deltaTime);
             BossMove = false;
-            Invoke("ATSound", 0.3f);
+            //TagetOn = true;
         }
         else
         {
             anime.SetBool("BiteAT", false);
             anime.SetBool("Idle", true);
             BossMove = true;
+            TagetOn = false;
+        }
+
+        if (TagetOn)
+        {
+            SoundManager.instance.SFXPlay("Attack", Attack);
         }
     }
 
@@ -125,10 +133,6 @@ public class Boss : MonoBehaviour
     public void BossAT()
     {
         transform.position += new Vector3(0, -3f * Time.deltaTime, 0);
-    }
-    public void ATSound()
-    {
-       SoundManager.instance.SFXPlay("Attack", Attack);
     }
 }
 
