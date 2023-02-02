@@ -181,6 +181,8 @@ public class Player : MonoBehaviour
         {
          if(Input.GetKeyDown(KeyCode.Q))
             {
+            SkillUI.Runing();
+
             CoolAttack_Start();
             particleObject.Play();
             SoundManager.instance.SFXPlay("CoolSound", SpeedRun_Sound);
@@ -193,6 +195,7 @@ public class Player : MonoBehaviour
             CoolMode_On = false;
             CoolAttack_Stop();
             particleObject.Stop();
+            SkillUI.Skill2.SetActive(false);
         }
         if(Player_MoveStop == false)
         {
