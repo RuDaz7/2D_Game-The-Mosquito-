@@ -18,7 +18,7 @@
 > ![Game2](https://user-images.githubusercontent.com/90640499/215120213-c06e605e-de35-48cb-9214-c1a7adab1fe2.gif) 
 + ## 게임 플레이 영상_2023/02/01_기준  
 > ![UI_update](https://user-images.githubusercontent.com/90640499/215810610-e17e4edb-e7c5-41db-99cf-91b6ba9c25ba.gif)  
-+ ## 🏴‍보스 업데이트
++ ## 🏴‍보스 업데이트.
 > [🏴‍☠️보스 업데이트🏴‍☠️](https://github.com/RuDaz7/2D_Game-The-Mosquito-/issues/10#issue-1562837452)
 ---
 + ## 타이틀_2022/01/05_기준
