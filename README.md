@@ -41,5 +41,5 @@
 [조작법 ⌨](https://github.com/RuDaz7/2D_Game-The-Mosquito-/issues/7#issue-1525499815)  
 [승리 조건👊](https://github.com/RuDaz7/2D_Game-The-Mosquito-/issues/9#issue-1560824799)  
 
-[개발중지]
+[현재 개발중단]
 ---  
